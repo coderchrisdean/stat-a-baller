@@ -23,7 +23,6 @@ Repo for first group project
 ## Presentation Requirements
 [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit#slide=id.p)
 
-
 *Elevator pitch: A one-minute description of your application.
 
 *Concept: What is your user story? What was your motivation for development?
