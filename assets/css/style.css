@@ -1,2 +1,15 @@
 /* import bulma css from: https://bulma.io/documentation/overview/start/ */
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+/* @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" */
+
+/* ----------- player page css ---------- */
+.player-box {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+
+.go-back-btn {
+    position: relative;
+    left: 45%;
+}
