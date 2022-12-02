@@ -1,18 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <title>NBA Stats</title>
+    </head>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>NBA Stats</title>
+    <body>
+    <!------------ mx: use window.location to link other html ------------>
+    <div id="4-star-players">
+        <h1>Title: Home Page</h1>
+        <div class="star-players columns is-centered is-variable is-3">
+            <div id="demo_star_player_1" class="column is-narrow">
+                <figure class="image is-128x128">
+                    <a href="/star_player_page.html">
+                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                            star_player_1
+                    </a>
+                </figure>
+            </div>
+            <div id="demo_star_player_2" class="column is-narrow">
+                <figure class="image is-128x128">
+                  <a href="/star_player_page.html">
+                      <img src="https://bulma.io/images/placeholders/128x128.png">
+                      star_player_2
+                  </a>
+                </figure>
+            </div>
+            <div id="demo_star_player_3" class="column is-narrow">
+                <figure class="image is-128x128">
+                  <a href="/star_player_page.html">
+                      <img src="https://bulma.io/images/placeholders/128x128.png">
+                      star_player_3
+                  </a>
+                </figure>
+            </div>
+            <div id="demo_star_player_4" class="column is-narrow">
+                <figure class="image is-128x128">
+                  <a href="/star_player_page.html">
+                      <img src="https://bulma.io/images/placeholders/128x128.png">
+                      star_player_4
+                  </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!------------- drop down player option list on the left side ------------->
+    <div id="drop-list">
+        <div class="dropdown is-active">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                <span>Choose Another Player</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content">
+                <a href="/option_player_page.html" class="dropdown-item">
+                  LeBron James
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br>
 
-</head>
 
-<body class = "card">
-<!-- Hero Banner (sticky/never changes) -->
-    <section class="hero">
+    <!------------ added main tag and moved "card" class to main ------------>
+
+    <main id="lebron-james" class = "card">
+       <!-- Hero Banner (sticky/never changes) -->
+        <section class="hero">
         <div class="hero-body">
           <p class="title">
             NBA Stat Group Project
@@ -88,10 +152,10 @@
             </section>
         </div>
     </div>
-<script src="./assets/js/script.js"></script>
+    </main> 
+   
 
+    <script src="./assets/js/script.js"></script>  
+    </body>
     
-    
-
-</body>
 </html>
