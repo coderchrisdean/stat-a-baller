@@ -58,7 +58,7 @@
     </div>
     <br />
 
-    <!------------- drop down option players list on the left side ------------->
+    <!-------- mx: drop down option players list on the left side --------->
     <div id="dropdown-list" class="dropdown">
       <div class="dropdown-trigger">
         <button id="dropdown-btn" class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
@@ -78,6 +78,27 @@
       </div>
     </div>
     <br />
+    <!-------- mx: modal pop up when click dropdown list option --------->
+    <div id="modal-option-player-div" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">
+            Select a player for more details
+          </p>
+        </header>
+        <section class="modal-card-body">
+          <ul>
+            <li id="modal-li-1" class="modal-list py-1"><span id="modal-player1-span">player 1</span></li>
+            <li id="modal-li-2" class="modal-list py-1"><span id="modal-player2-span">player 2</span></li>
+            <li id="modal-li-3" class="modal-list py-1"><span id="modal-player3-span">player 3</span></li>
+          </ul>
+        </section>
+        <footer class="modal-card-foot">
+          <button id="modal-delete-btn" class="button" aria-label="close">Cancel</button>
+        </footer>
+      </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
   </body>
