@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+      />
+      <link
+        href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./assets/css/reset.css">
+      <link rel="stylesheet" href="./assets/css/style.css">
         <title>NBA Stats</title>
     </head>
 
     <body>
     <!------------ mx: use window.location to link other html ------------>
-    <div id="4-star-players">
+    <div id="4-star-players">  <!--class="is-hidden"-->
         <h1>Title: Home Page</h1>
         <div class="star-players columns is-centered is-variable is-3">
             <div id="demo_star_player_1" class="column is-narrow">
                 <figure class="image is-128x128">
-                    <a href="/star_player_page.html">
+                    <!-- <a href="/star_player_page.html"> -->
                         <img src="https://bulma.io/images/placeholders/128x128.png">
                             star_player_1
-                    </a>
+                    <!-- </a> -->
                 </figure>
             </div>
             <div id="demo_star_player_2" class="column is-narrow">
@@ -49,27 +61,56 @@
         </div>
     </div>
     <br>
+
+
+
     <!------------- drop down player option list on the left side ------------->
-    <div id="drop-list">
-        <div class="dropdown is-active">
-            <div class="dropdown-trigger">
-              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                <span>Choose Another Player</span>
-                <span class="icon is-small">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-              <div class="dropdown-content">
-                <a href="/option_player_page.html" class="dropdown-item">
-                  LeBron James
-                </a>
-              </div>
-            </div>
-        </div>
-    </div>
-    <br>
+    
+      <article class="option-player-list panel is-link column is-half">
+      <p class="panel-heading">
+        More California Players
+      </p>
+      <p class="panel-tabs">
+        <a class="is-active">Golden State Warriors</a>
+        <a>Los Angeles Clippers</a>
+        <a>Los Angeles Lakers</a>
+        <a>Sacramento Kings</a>
+      </p>
+
+      <!-- search: auto complete for 16 players' name|later -->
+      <!-- <div class="panel-block">
+        <p class="control has-icons-left">
+          <input class="input is-link" type="text" placeholder="Search">
+          <span class="icon is-left">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </span>
+        </p> -->
+      <a class="panel-block is-active">
+        <span class="panel-icon">
+          <i class="fa fa-dribbble" aria-hidden="true"></i>
+        </span>
+        1
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fa fa-dribbble" aria-hidden="true"></i>
+        </span>
+        2
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fa fa-dribbble" aria-hidden="true"></i>
+        </span>
+       3
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fa fa-dribbble" aria-hidden="true"></i>
+        </span>
+        4
+      </a>
+    </article>
+  <br>
 
     <!------------ added main tag and moved "card" class to main ------------>
     <main id="lebron-james" class = "card">
@@ -151,7 +192,6 @@
         </div>
     </div>
     </main> 
-   
 
     <script src="./assets/js/script.js"></script>  
     </body>
