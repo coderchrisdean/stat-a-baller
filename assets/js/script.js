@@ -1,32 +1,21 @@
 // Styling Done Via Javascript -- Chris
 // *********************************************
 // <body id= "body">
-var bodyEl = document.getElementById('body');
+var body = document.getElementById('body');
     // <nav id= "navMenu">
-var navEl = document.getElementById('navMenu');
+var navMenu = document.getElementById('navMenu');
     // create new div
-var newDiv = document.createElement('div');
+var div = document.createElement('div');
     // add/remove class to div
 var addClass = classList.add //('class', 'class2', 'class3')
 var removeClass = classList.removeClass // ('class')
     // <a> (links)
     // var aEl = document.getElementsByTagName('a');
 // **********************************************
-    bodyEl.classList.add('has-background-dark');
-    bodyEl.classList.add('has-text-white');
-    navEl.classList.add('has-background-dark');
-    navEl.classList.add('has-text-white');
-// *********************************************
-// Carousel Feature
-// <section id="carousel">
-var carousel = document.getElementById("carousel");
-
-bulmaCarousel.attach('#player-carousel', {
-    slidesToScroll: 1,
-    slidesToShow: 4
-});
-var carouselSection = document.getElementById('carousel');
-
+    // body.classList.add('has-background-dark');
+    // body.classList.add('has-text-white');
+    // nav.classList.add('has-background-dark');
+    // nav.classList.add('has-text-white');
 
 
 
