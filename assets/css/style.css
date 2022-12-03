@@ -18,7 +18,12 @@
   left: 40%;
 }
 
-/* ------------------ option-player-list -------------- */
+/* ------------- ⬇ home page - dropdown list⬇ ---------------- */
+#dropdown-list .dropdown-content li:hover {
+    cursor: pointer;
+}
+
+/* ------------- ⬆ home page - dropdown list ⬆ ---------------- */
 
 /* ------------- ⬇ option player stats page(table) ⬇ ---------------- */
 .option-player-page {
@@ -65,5 +70,4 @@
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
-
 /* ------------- ⬆ option player stats page(table) ⬆ ---------------- */

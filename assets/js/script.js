@@ -10,11 +10,15 @@
 // 	.catch(err => console.error(err));
 
 
-// ----------- home page: hide card -----------
-document.querySelector("#lebron-james").style.display = "none";
-
 // document.querySelector("#demo_star_player_1").addEventListener("click", ()=>{
 // 	document.querySelector("#display_player-1").classList.remove("is-hidden");
 // });
 
 // ----------- home page: option player/modal -----------
+const dropdownBtn = document.querySelector("#dropdown-btn");
+const dropdownList = document.querySelector("#dropdown-list");
+
+dropdownBtn.addEventListener("click", (e) => {
+	e.stopPropagation();
+	dropdownList.classList.toggle("is-active");
+});
