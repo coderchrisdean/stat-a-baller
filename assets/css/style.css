@@ -1,11 +1,69 @@
-/* import bulma css from: https://bulma.io/documentation/overview/start/ */
-/* @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" */
 
-/* // ----------- ⬇ mx: divider ⬇ ----------- */
 /* ---------- mx: google fonts ------------ */
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* ------------------ chris divider ----------------- */
+/* --------- carousel css----------- */
+.slider-text {
+    position: absolute;
+    right: 0;
+    bottom: 0
+  }
+  
+#slider .card-content{
+    max-width: auto;
+  }
+  
+#slider{
+    overflow: hidden;
+  }
+  
+@media screen and (max-width: 1023px) {
+    #slider .card-content{
+      display: none;
+    }
+  }
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.item-slide img {
+  max-width: 1200px;
+}
+
+/* ------------chris divider ----------------- */
+
+/* ----------- ⬇ mx: divider ⬇ ----------- */
 /* ----------- mx: player page css ---------- */
 .player-box {
   display: flex;
@@ -71,4 +129,6 @@
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
+
 /* ----------- ⬆ mx: divider ⬆ ----------- */
+
