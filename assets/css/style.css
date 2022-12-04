@@ -1,6 +1,7 @@
 /* import bulma css from: https://bulma.io/documentation/overview/start/ */
 /* @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" */
 
+/* // ----------- ⬇ mx: divider ⬇ ----------- */
 /* ---------- mx: google fonts ------------ */
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -70,3 +71,4 @@
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
+/* ----------- ⬆ mx: divider ⬆ ----------- */

@@ -12,6 +12,7 @@
 // 	document.querySelector("#display_player-1").classList.remove("is-hidden");
 // });
 
+// ----------- ⬇ mx: divider ⬇ -----------
 // ----------- mx: home page - option player variables -----------
 const dropdownBtn = document.querySelector("#dropdown-btn");
 const dropdownList = document.querySelector("#dropdown-list");
@@ -54,3 +55,4 @@ modalLiArr.forEach((li) => {
     window.location.href = "./option_player_page.html";
   });
 });
+// ----------- ⬆ mx: divider ⬆ -----------
