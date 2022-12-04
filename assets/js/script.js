@@ -1,3 +1,67 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------- chris divider -----------------
+
 // Styling Done Via Javascript -- Chris
 // *********************************************
 // <body id= "body">
@@ -10,6 +74,9 @@ var div = document.createElement('div');
 var addClass = classList.add //('class', 'class2', 'class3')
 var removeClass = classList.removeClass // ('class')
     // <a> (links)
+
+
+
     // var aEl = document.getElementsByTagName('a');
 // **********************************************
     // body.classList.add('has-background-dark');
@@ -47,3 +114,4 @@ var removeClass = classList.removeClass // ('class')
 
 // displayPlayer1.addEventListener('click', showLebronJames)
 
+// ------------chris divider -----------------
