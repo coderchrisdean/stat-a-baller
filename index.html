@@ -19,6 +19,9 @@
   </head>
 
   <body>
+    <div class="container">
+      <h1 class="title is-h1">Title</h1>
+    </div>
         <!------------ mx: use window.location to link other html ------------>
         <!-- chris: removed 4-star players to Carousel Feature  -->
         <!-- added div for carousel coded in javascript -->
@@ -152,7 +155,10 @@
             Select a player for more details
           </p>
         </header>
+        <!-- may need to add a user search input with auto complete:player's name -->
         <section class="modal-card-body">
+          <p>Enter a player's name or select one of the names below</p>
+          <input class="input is-info" type="text" placeholder="Input here">
           <ul>
             <li id="modal-li-1" class="modal-list py-1"><span id="modal-player1-span">player 1</span></li>
             <li id="modal-li-2" class="modal-list py-1"><span id="modal-player2-span">player 2</span></li>
@@ -160,6 +166,7 @@
           </ul>
         </section>
         <footer class="modal-card-foot">
+          <button class="button is-success">Search Player</button>
           <button id="modal-delete-btn" class="button" aria-label="close">Cancel</button>
         </footer>
       </div>
