@@ -1,16 +1,3 @@
-// fetch('https://www.balldontlie.io/api/v1/players/237')
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-
-//     fetch('https://www.balldontlie.io/api/v1/season_averages?player_ids[1-500]')
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-
-// document.querySelector("#demo_star_player_1").addEventListener("click", ()=>{
-// 	document.querySelector("#display_player-1").classList.remove("is-hidden");
-// });
 
 // ----------- ⬇ mx: divider ⬇ -----------
 // ----------- mx: home page - option player list variables -----------
@@ -52,4 +39,15 @@ modalLiArr.forEach((li) => {
     window.location.href = "./option_player_page.html";
   });
 });
+
+
+// ----------- mx: fetch from api -----------
+var allPlayersURL = "https://www.balldontlie.io/api/v1/players?search=lebron" 
+fetch (allPlayersURL)
+  .then((response) => response.json())
+  .then((data) => {
+	console.log(data);
+	  });
+	  // returns 25 arrays of players in "data" object by default
+
 // ----------- ⬆ mx: divider ⬆ -----------
