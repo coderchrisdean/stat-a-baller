@@ -1,10 +1,9 @@
-
 // fetch('https://www.balldontlie.io/api/v1/players/237')
 // 	.then(response => response.json())
 // 	.then(response => console.log(response))
 // 	.catch(err => console.error(err));
 
-//   fetch('https://www.balldontlie.io/api/v1/season_averages?player_ids[1-500]')
+//     fetch('https://www.balldontlie.io/api/v1/season_averages?player_ids[1-500]')
 // 	.then(response => response.json())
 // 	.then(response => console.log(response))
 // 	.catch(err => console.error(err));
@@ -14,7 +13,7 @@
 // });
 
 // ----------- ⬇ mx: divider ⬇ -----------
-// ----------- mx: home page - option player variables -----------
+// ----------- mx: home page - option player list variables -----------
 const dropdownBtn = document.querySelector("#dropdown-btn");
 const dropdownList = document.querySelector("#dropdown-list");
 const gswTeam = document.querySelector("#gsw");
@@ -31,7 +30,7 @@ const modalLi2 = document.querySelector("#modal-li-2");
 const modalLi3 = document.querySelector("#modal-li-3");
 var modalLiArr = [modalLi1, modalLi2, modalLi3];
 
-// ----------- mx: home page - option player functions -----------
+// ----------- mx: home page - option player list functions -----------
 dropdownBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   dropdownList.classList.toggle("is-active");
@@ -46,3 +45,11 @@ teamArr.forEach((team) => {
 
 // ----------- home page: hide card -----------
 document.querySelector("#lebron-james").style.display = "none";
+
+modalLiArr.forEach((li) => {
+  li.addEventListener("click", (e) => {
+    e.stopPropagation();
+    window.location.href = "./option_player_page.html";
+  });
+});
+// ----------- ⬆ mx: divider ⬆ -----------
