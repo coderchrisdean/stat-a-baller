@@ -1,4 +1,3 @@
-
 // ----------- ⬇ mx: divider ⬇ -----------
 // ----------- mx: home page - option player list variables -----------
 const dropdownBtn = document.querySelector("#dropdown-btn");
@@ -43,14 +42,76 @@ modalLiArr.forEach((li) => {
   });
 });
 
+// ----------- mx: search input & modal alert -----------
+// var userInput = document.querySelector("#user-input");
+function getUserInput() {
+  return document.querySelector("#user-input").value.trim().toLowerCase();
+}
+var searchBtn = document.querySelector("#user-input-search-btn");
+var modalAlert = document.querySelector("#modal-alert");
+var modalAlertCloseBtn = document.querySelector("#modal-alert-close-btn");
+var searchedPlayer = [];
+
+// ----------- mx: search input functions -----------
+searchBtn.addEventListener("click", (e) => {
+  console.log("hello1 " + getUserInput()); // no user input value
+  e.stopPropagation();
+// ------ 待增加条件 -------
+  if (getUserInput() === "") {
+    // || userInput === null 待验证
+    modalAlert.classList.add("is-active");
+  } else {
+    modalAlert.classList.remove("is-active");
+    // ----------- mx: save searched result to local storage -----------
+    searchedPlayer.push(getUserInput());
+    localStorage.setItem("userSearchPlayer", JSON.stringify(searchedPlayer));
+    console.log("this is" + searchedPlayer);
+    searchPlayerID(getUserInput());
+  }
+  // return
+});
 
 // ----------- mx: fetch from api -----------
-var allPlayersURL = "https://www.balldontlie.io/api/v1/players?search=lebron" 
-fetch (allPlayersURL)
-  .then((response) => response.json())
-  .then((data) => {
-	console.log(data);
-	  });
-	  // returns 25 arrays of players in "data" object by default
+// 需要fetch两次
+// 第一次fetch是为了获取球员的id，通过user input
+// 第二次fetch是为了获取球员的详细信息，通过id
+// 获取的信息display在option_player_page.html上
+// from balldontlie api
+function searchPlayerID(userInput) {
+  // var testPlayer = "Stephen Curry";
+  var queryURL = `https://www.balldontlie.io/api/v1/players?search=${userInput}`;
+  //?seasons[]=2018&seasons[]=2015&player_ids[]=1&player_ids[]=2&postseason=true
+  fetch(queryURL)
+    .then((response) => response.json())
+    .then((data) => {
+      // console.log(data);
+      var playerID = data.data[0].id;
+      console.log(playerID);
+      searchPlayerStats(playerID);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+// use player id fetch again to get player stats
+function searchPlayerStats(playerID) {
+  //console.log(98);
+  var playerIDs = [playerID];
+  var queryURL = ` https://www.balldontlie.io/api/v1/stats?player_ids[]=${playerIDs}`;
+  fetch(queryURL)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+
+modalAlertCloseBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  modalAlert.classList.remove("is-active");
+});
 
 // ----------- ⬆ mx: divider ⬆ -----------
