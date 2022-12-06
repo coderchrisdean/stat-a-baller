@@ -158,12 +158,12 @@ const getPlayerStats = (id) => {
 
 
 // getPlayerId
-stephStar.addEventListener('click', getGiannis);
+nikolaStar.addEventListener('click', getNikola);
 
 // ----------- home page: hide card -----------
 
 
-// Giannis Stats
+// Nikola Stats
 var getNikola= function(){
     getPlayerId("Nikola Jokic")
 }
@@ -210,6 +210,6 @@ const getPlayerStats = (id) => {
 
 
 // getPlayerId
-stephStar.addEventListener('click', getNikola);
+nikolaStar.addEventListener('click', getNikola);
 
 // ----------- home page: hide card -----------
