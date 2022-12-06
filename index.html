@@ -19,8 +19,8 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1 class="title is-h1">Title</h1>
+    <div class="container py-5 has-text-centered">
+      <h1 class="title is-h1">Home Page</h1>
     </div>
         <!------------ mx: use window.location to link other html ------------>
         <!-- chris: removed 4-star players to Carousel Feature  -->
@@ -126,8 +126,8 @@
     </div>
     <br />
 
-    <!-------- mx: drop down option players list on the left side --------->
-    <div id="dropdown-list" class="dropdown">
+    <!-------- mx: will delete later⬇ --------->
+    <div id="dropdown-list" class="dropdown py-5 is-hidden">
       <div class="dropdown-trigger">
         <button id="dropdown-btn" class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
           <span>See more ca players</span>
@@ -146,6 +146,31 @@
       </div>
     </div>
     <br />
+     <!-- will delete later ⬆ -->
+
+    <!------ mx: user input to search for players -------->
+    <div id="user-input-div" class="container py-5">
+          <p>Enter a player's name to search for recent historical performance</p>
+          <input id="user-input" class="input is-info" type="text" placeholder="Input here">
+          <button id="user-input-search-btn" class="button is-success">Search Player</button>
+    </div>
+
+    <!------ modal alert ------->
+    <div id="modal-alert" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="modal-card">
+          <header class="modal-card-head"></header>
+            <section class="modal-card-body">
+              <p id="modal-alert-text">Player not found, try another name</p>
+            </section>
+            <footer class="modal-card-foot">
+              <button id="modal-alert-close-btn" class="button" aria-label="close">Close</button>
+            </footer>
+        </div>
+      </div> 
+    </div>
+
     <!-------- mx: modal pop up when click dropdown list option --------->
     <div id="modal-option-player-div" class="modal">
       <div class="modal-background"></div>
@@ -157,8 +182,6 @@
         </header>
         <!-- may need to add a user search input with auto complete:player's name -->
         <section class="modal-card-body">
-          <p>Enter a player's name or select one of the names below</p>
-          <input class="input is-info" type="text" placeholder="Input here">
           <ul>
             <li id="modal-li-1" class="modal-list py-1"><span id="modal-player1-span">player 1</span></li>
             <li id="modal-li-2" class="modal-list py-1"><span id="modal-player2-span">player 2</span></li>
@@ -166,7 +189,6 @@
           </ul>
         </section>
         <footer class="modal-card-foot">
-          <button class="button is-success">Search Player</button>
           <button id="modal-delete-btn" class="button" aria-label="close">Cancel</button>
         </footer>
       </div>
@@ -176,5 +198,6 @@
     <!-- import javascript files -->
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/option_player.js"></script>
   </body>
 </html>

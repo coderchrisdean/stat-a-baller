@@ -133,3 +133,14 @@
 }
 
 /* ----------- ⬆ mx: divider ⬆ ----------- */
+
+/* ----------- mx: search input ---------- */
+#user-input-div {
+  line-height: 200%;
+}
+
+#user-input-div button {
+  margin-top: 1%;
+}
+
+/* ----------- ⬆ mx: divider ⬆ ----------- */
