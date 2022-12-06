@@ -8,6 +8,7 @@
 /* ------------------ chris divider ----------------- */
 /* --------- carousel css----------- */
 .slider-text {
+    background-color: black;
     position: absolute;
     right: 0;
     bottom: 0
@@ -35,7 +36,7 @@
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   transition: 2s ease;

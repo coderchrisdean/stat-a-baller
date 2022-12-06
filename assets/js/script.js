@@ -47,7 +47,8 @@ teamArr.forEach((team) => {
 });
 
 // ----------- home page: hide card -----------
-document.querySelector("#lebron-james").style.display = "none";
+// chris -- may need to debug ⬇ ⬇ ⬇ ⬇ error in console ----
+document.querySelector("#lebron-james").style.display = " is-hidden";
 
 modalLiArr.forEach((li) => {
   li.addEventListener("click", (e) => {
