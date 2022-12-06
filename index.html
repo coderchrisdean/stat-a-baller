@@ -1,87 +1,166 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@coderchrisdean 
+coderchrisdean
+/
+group_project_one
+Public
+Code
+Issues
+12
+Pull requests
+Discussions
+Actions
+Projects
+1
+Wiki
+Security
+Insights
+Settings
+group_project_one/index.html
+@mxu4321
+mxu4321 ,
+Latest commit a73201a yesterday
+ History
+ 3 contributors
+@mxu4321@coderchrisdean@SethDavis16
+180 lines (173 sloc)  7.08 KB
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
-    <title>Carousel: Feature</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>NBA Stats</title>
+  </head>
 
-</head>
-<body>
+  <body>
+    <div class="container">
+      <h1 class="title is-h1">Title</h1>
+    </div>
         <!------------ mx: use window.location to link other html ------------>
         <!-- chris: removed 4-star players to Carousel Feature  -->
         <!-- added div for carousel coded in javascript -->
         <section id="carousel">
             
-            <div class="columns">
-            <div id="slider" class="container">
-                <!-- Player Giannis Antetokounmpo -->
-            <div class="card column">
-                <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                        <img src="./assets/images/players/Antetokounmpo_Giannis-Action.jpg" alt="Giannis Antetokounmpo" />
-                    </figure>
-                </div>
-                <div class="card-content slider-text ">
-                    <div id="caption" class="is-size-5 box">
-                    Giannis Antetokounmpo 
-                    </div>
-                </div>
-            </div>
+          <div class="columns">
+          <div id="slider" class="container">
+              <!-- Player Giannis Antetokounmpo -->
+          <div class="card column">
+              <div class="card-image">
+                  <figure class="image is-16by9 is-covered">
+                      <img src="./assets/images/players/Antetokounmpo_Giannis-Action.jpg" alt="Giannis Antetokounmpo" />
+                  </figure>
+              </div>
+              <div class="card-content slider-text ">
+                  <div id="caption" class="is-size-5 box">
+                  Giannis Antetokounmpo 
+                  </div>
+              </div>
+          </div>
 
-                <!-- Player Nikola Jokik -->
-            <div class="card column">
-                <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                        <img src="./assets/images/players/Jokik_Nikola_action.jpg" alt="Nikola Jokik" />
-                    </figure>
-                </div>
-                <div class="card-content slider-text ">
-                    <div id="caption" class="is-size-5 box">
-                        Nikola Jokik
-                    </div>
-                </div>
-            </div>
+              <!-- Player Nikola Jokik -->
+          <div class="card column">
+              <div class="card-image">
+                  <figure class="image is-16by9 is-covered">
+                      <img src="./assets/images/players/Jokik_Nikola_action.jpg" alt="Nikola Jokik" />
+                  </figure>
+              </div>
+              <div class="card-content slider-text ">
+                  <div id="caption" class="is-size-5 box">
+                      Nikola Jokik
+                  </div>
+              </div>
+          </div>
 
-                <!-- Player Lebron James -->
-            <div class="card column">
-                <div class="card-image">
-                        <figure class="image is-16by9 is-covered">
-                            <img src="./assets/images/players/James_Lebron_Action.jfif" alt="Lebron James" />
-                        </figure>
-                </div>
-                <div class="card-content slider-text ">
-                        <div class=" is-size-5 box">
-                            Lebron James
-                        </div>
-                </div>
-                
-            </div>
-             <!-- Player Steph Curry -->
-            <div class="card column">
-                <div class="card-image">
-                        <figure class="image is-16by9 is-covered">
-                            <img src="./assets/images/players/Curry_Steph-Action.jpg" alt="Lebron James" />
-                        </figure>
-                </div>
-                <div class="card-content slider-text ">
-                        <div class=" is-size-5 box">
-                            Steph Curry
-                        </div>
-                </div>
-                </div>
-            </div>
+              <!-- Player Lebron James -->
+          <div class="card column">
+              <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                          <img src="./assets/images/players/James_Lebron_Action.jfif" alt="Lebron James" />
+                      </figure>
+              </div>
+              <div class="card-content slider-text ">
+                      <div class=" is-size-5 box">
+                          Lebron James
+                      </div>
+              </div>
+              
+          </div>
+           <!-- Player Steph Curry -->
+          <div class="card column">
+              <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                          <img src="./assets/images/players/Curry_Steph-Action.jpg" alt="Lebron James" />
+                      </figure>
+              </div>
+              <div class="card-content slider-text ">
+                      <div class=" is-size-5 box">
+                          Steph Curry
+                      </div>
+              </div>
+              </div>
+          </div>
         </section>
+    <!------------ mx: use window.location to link other html ------------>
+    <div id="4-star-players" class="is-hidden">
+      <h1>Title: Home Page</h1>
+      <div class="star-players columns is-centered is-variable is-3">
+        <div id="demo_star_player_1" class="column is-narrow">
+          <figure class="image is-128x128">
+            <!-- <a href="/star_player_page.html"> -->
+            <img src="https://bulma.io/images/placeholders/128x128.png" />
+            star_player_1
+            <!-- </a> -->
+          </figure>
+        </div>
+        <div id="demo_star_player_2" class="column is-narrow">
+          <figure class="image is-128x128">
+            <a href="/star_player_page.html">
+              <img src="https://bulma.io/images/placeholders/128x128.png" />
+              star_player_2
+            </a>
+          </figure>
+        </div>
+        <div id="demo_star_player_3" class="column is-narrow">
+          <figure class="image is-128x128">
+            <a href="/star_player_page.html">
+              <img src="https://bulma.io/images/placeholders/128x128.png" />
+              star_player_3
+            </a>
+          </figure>
+        </div>
+        <div id="demo_star_player_4" class="column is-narrow">
+          <figure class="image is-128x128">
+            <a href="/star_player_page.html">
+              <img src="https://bulma.io/images/placeholders/128x128.png" />
+              star_player_4
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <br />
 
-
- 
     <!-------- mx: drop down option players list on the left side --------->
-    <section>
     <div id="dropdown-list" class="dropdown">
       <div class="dropdown-trigger">
         <button id="dropdown-btn" class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
@@ -101,9 +180,7 @@
       </div>
     </div>
     <br />
-    </section>
     <!-------- mx: modal pop up when click dropdown list option --------->
-    <section>
     <div id="modal-option-player-div" class="modal">
       <div class="modal-background"></div>
       <div class="modal-card">
@@ -112,7 +189,10 @@
             Select a player for more details
           </p>
         </header>
+        <!-- may need to add a user search input with auto complete:player's name -->
         <section class="modal-card-body">
+          <p>Enter a player's name or select one of the names below</p>
+          <input class="input is-info" type="text" placeholder="Input here">
           <ul>
             <li id="modal-li-1" class="modal-list py-1"><span id="modal-player1-span">player 1</span></li>
             <li id="modal-li-2" class="modal-list py-1"><span id="modal-player2-span">player 2</span></li>
@@ -120,13 +200,30 @@
           </ul>
         </section>
         <footer class="modal-card-foot">
+          <button class="button is-success">Search Player</button>
           <button id="modal-delete-btn" class="button" aria-label="close">Cancel</button>
         </footer>
       </div>
     </div>
-  </section>
+    <br>
 
-    <script src="./assets/js/carousel.js"></script> 
+    <!-- import javascript files -->
+    <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+group_project_one/index.html at main · coderchrisdean/group_project_one
