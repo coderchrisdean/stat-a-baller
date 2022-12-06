@@ -113,12 +113,15 @@ function searchPlayerStats2019(playerID) {
       var fetchPlayerName2019 =
         data.data[0].player.first_name + " " + data.data[0].player.last_name;
       var fetchTeamName2019 = data.data[0].team.full_name;
-      var fetchPoints2019 = data.data[0].pts;
+	  var fetchSeason2019 = data.data[0].game.date;
+      var fetchPoints2019 = data.data[1].pts;
       var fetchRebounds2019 = data.data[1].reb;
       var fetchSteals2019 = data.data[1].stl;
       var fetchAssists2019 = data.data[1].ast;
       console.log(
-        "2019: " + fetchPlayerName2019,
+        "2019: " + 
+		fetchSeason2019,
+		fetchPlayerName2019,
         fetchTeamName2019,
         fetchPoints2019,
         fetchRebounds2019,
@@ -147,12 +150,15 @@ function searchPlayerStats2018(playerID) {
       var fetchPlayerName2018 =
         data.data[0].player.first_name + " " + data.data[0].player.last_name;
       var fetchTeamName2018 = data.data[0].team.full_name;
-      var fetchPoints2018 = data.data[0].pts;
-      var fetchRebounds2018 = data.data[1].reb;
-      var fetchSteals2018 = data.data[1].stl;
-      var fetchAssists2018 = data.data[1].ast;
+	  var fetchSeason2018 = data.data[17].game.date;
+      var fetchPoints2018 = data.data[17].pts;
+      var fetchRebounds2018 = data.data[17].reb;
+      var fetchSteals2018 = data.data[17].stl;
+      var fetchAssists2018 = data.data[17].ast;
       console.log(
-        "2018: " + fetchPlayerName2018,
+        "2018: " + 
+		fetchSeason2018,
+		fetchPlayerName2018,
         fetchTeamName2018,
         fetchPoints2018,
         fetchRebounds2018,
@@ -181,12 +187,15 @@ function searchPlayerStats2017(playerID) {
       var fetchPlayerName2017 =
         data.data[0].player.first_name + " " + data.data[0].player.last_name;
       var fetchTeamName2017 = data.data[0].team.full_name;
+	  var fetchSeason2017 = data.data[0].game.date;
       var fetchPoints2017 = data.data[0].pts;
-      var fetchRebounds2017 = data.data[1].reb;
-      var fetchSteals2017 = data.data[1].stl;
-      var fetchAssists2017 = data.data[1].ast;
+      var fetchRebounds2017 = data.data[0].reb;
+      var fetchSteals2017 = data.data[0].stl;
+      var fetchAssists2017 = data.data[0].ast;
       console.log(
-        "2017: " + fetchPlayerName2017,
+        "2017: " + 
+		fetchSeason2017,
+		fetchPlayerName2017,
         fetchTeamName2017,
         fetchPoints2017,
         fetchRebounds2017,
@@ -215,12 +224,15 @@ function searchPlayerStats2016(playerID) {
       var fetchPlayerName2016 =
         data.data[0].player.first_name + " " + data.data[0].player.last_name;
       var fetchTeamName2016 = data.data[0].team.full_name;
+	  var fetchSeason2016 = data.data[0].game.date;
       var fetchPoints2016 = data.data[0].pts;
       var fetchRebounds2016 = data.data[0].reb;
       var fetchSteals2016 = data.data[0].stl;
       var fetchAssists2016 = data.data[0].ast;
       console.log(
-        "2016: " + fetchPlayerName2016,
+        "2016: " + 
+		fetchSeason2016,
+		fetchPlayerName2016,
         fetchTeamName2016,
         fetchPoints2016,
         fetchRebounds2016,
