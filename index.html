@@ -1,161 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <title>NBA Stats</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>NBA Stats</title>
+  </head>
 
-    <body>
-    <!------------ mx: use window.location to link other html ------------>
-    <div id="4-star-players">
-        <h1>Title: Home Page</h1>
-        <div class="star-players columns is-centered is-variable is-3">
-            <div id="demo_star_player_1" class="column is-narrow">
-                <figure class="image is-128x128">
-                    <a href="./star_player_page.html">
-                        <img src="https://bulma.io/images/placeholders/128x128.png">
-                            star_player_1
-                    </a>
-                </figure>
-            </div>
-            <div id="demo_star_player_2" class="column is-narrow">
-                <figure class="image is-128x128">
-                  <a href="/star_player_page.html">
-                      <img src="https://bulma.io/images/placeholders/128x128.png">
-                      star_player_2
-                  </a>
-                </figure>
-            </div>
-            <div id="demo_star_player_3" class="column is-narrow">
-                <figure class="image is-128x128">
-                  <a href="/star_player_page.html">
-                      <img src="https://bulma.io/images/placeholders/128x128.png">
-                      star_player_3
-                  </a>
-                </figure>
-            </div>
-            <div id="demo_star_player_4" class="column is-narrow">
-                <figure class="image is-128x128">
-                  <a href="/star_player_page.html">
-                      <img src="https://bulma.io/images/placeholders/128x128.png">
-                      star_player_4
-                  </a>
-                </figure>
-            </div>
-        </div>
+  <body>
+    <div class="container">
+      <h1 class="title is-h1">Title</h1>
     </div>
-    <br>
-    <!------------- drop down player option list on the left side ------------->
-    <div id="drop-list">
-        <div class="dropdown is-active">
-            <div class="dropdown-trigger">
-              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                <span>Choose Another Player</span>
-                <span class="icon is-small">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-              <div class="dropdown-content">
-                <a href="/option_player_page.html" class="dropdown-item">
-                  LeBron James
-                </a>
+        <!------------ mx: use window.location to link other html ------------>
+        <!-- chris: removed 4-star players to Carousel Feature  -->
+        <!-- added div for carousel coded in javascript -->
+        <section id="carousel">
+            
+          <div class="columns">
+          <div id="slider" class="container">
+              <!-- Player Giannis Antetokounmpo -->
+          <div class="card column">
+              <div class="card-image">
+                  <figure class="image is-16by9 is-covered">
+                      <img src="./assets/images/players/Antetokounmpo_Giannis-Action.jpg" alt="Giannis Antetokounmpo" />
+                  </figure>
               </div>
-            </div>
+              <div class="card-content slider-text ">
+                  <div id="caption" class="is-size-5 box">
+                  Giannis Antetokounmpo 
+                  </div>
+              </div>
+          </div>
+
+              <!-- Player Nikola Jokik -->
+          <div class="card column">
+              <div class="card-image">
+                  <figure class="image is-16by9 is-covered">
+                      <img src="./assets/images/players/Jokik_Nikola_action.jpg" alt="Nikola Jokik" />
+                  </figure>
+              </div>
+              <div class="card-content slider-text ">
+                  <div id="caption" class="is-size-5 box">
+                      Nikola Jokik
+                  </div>
+              </div>
+          </div>
+
+              <!-- Player Lebron James -->
+          <div class="card column">
+              <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                          <img src="./assets/images/players/James_Lebron_Action.jfif" alt="Lebron James" />
+                      </figure>
+              </div>
+              <div class="card-content slider-text ">
+                      <div class=" is-size-5 box">
+                          Lebron James
+                      </div>
+              </div>
+              
+          </div>
+           <!-- Player Steph Curry -->
+          <div class="card column">
+              <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                          <img src="./assets/images/players/Curry_Steph-Action.jpg" alt="Lebron James" />
+                      </figure>
+              </div>
+              <div class="card-content slider-text ">
+                      <div class=" is-size-5 box">
+                          Steph Curry
+                      </div>
+              </div>
+              </div>
+          </div>
+        </section>
+    <!------------ mx: use window.location to link other html ------------>
+    <div id="4-star-players" class="is-hidden">
+      <h1>Title: Home Page</h1>
+      <div class="star-players columns is-centered is-variable is-3">
+        <div id="demo_star_player_1" class="column is-narrow">
+          <figure class="image is-128x128">
+            <!-- <a href="/star_player_page.html"> -->
+            <img src="https://bulma.io/images/placeholders/128x128.png" />
+            star_player_1
+            <!-- </a> -->
+          </figure>
         </div>
+        <div id="demo_star_player_2" class="column is-narrow">
+          <figure class="image is-128x128">
+            <a href="/star_player_page.html">
+              <img src="https://bulma.io/images/placeholders/128x128.png" />
+              star_player_2
+            </a>
+          </figure>
+        </div>
+        <div id="demo_star_player_3" class="column is-narrow">
+          <figure class="image is-128x128">
+            <a href="/star_player_page.html">
+              <img src="https://bulma.io/images/placeholders/128x128.png" />
+              star_player_3
+            </a>
+          </figure>
+        </div>
+        <div id="demo_star_player_4" class="column is-narrow">
+          <figure class="image is-128x128">
+            <a href="/star_player_page.html">
+              <img src="https://bulma.io/images/placeholders/128x128.png" />
+              star_player_4
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-------- mx: drop down option players list on the left side --------->
+    <div id="dropdown-list" class="dropdown">
+      <div class="dropdown-trigger">
+        <button id="dropdown-btn" class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+          <span>See more ca players</span>
+          <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+        <div class="dropdown-content">
+          <li id="gsw" class="dropdown-item"> Golden State Warriors </li>
+          <li id="lac" class="dropdown-item"> Los Angeles Clippers </li>
+          <li id="lal" class="dropdown-item"> Los Angeles Lakers </li>
+          <li id="sk" class="dropdown-item"> Sacramento Kings </li>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-------- mx: modal pop up when click dropdown list option --------->
+    <div id="modal-option-player-div" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">
+            Select a player for more details
+          </p>
+        </header>
+        <!-- may need to add a user search input with auto complete:player's name -->
+        <section class="modal-card-body">
+          <p>Enter a player's name or select one of the names below</p>
+          <input class="input is-info" type="text" placeholder="Input here">
+          <ul>
+            <li id="modal-li-1" class="modal-list py-1"><span id="modal-player1-span">player 1</span></li>
+            <li id="modal-li-2" class="modal-list py-1"><span id="modal-player2-span">player 2</span></li>
+            <li id="modal-li-3" class="modal-list py-1"><span id="modal-player3-span">player 3</span></li>
+          </ul>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Search Player</button>
+          <button id="modal-delete-btn" class="button" aria-label="close">Cancel</button>
+        </footer>
+      </div>
     </div>
     <br>
 
-
-    <!------------ added main tag and moved "card" class to main ------------>
-
-    <main id="lebron-james" class = "card">
-       <!-- Hero Banner (sticky/never changes) -->
-        <section class="hero">
-        <div class="hero-body">
-          <p class="title">
-            NBA Stat Group Project
-          </p>
-          <p class="subtitle">
-            Subtitle Text
-          </p>
-        </div>
-      </section>
-      <div class = "columns">
-
-          <div class="column is-one-fifth">
-              <div class="card">
-              
-                <!-- Empty Placeholder Card -->
-                </div> 
-            </div>
-            <!-- Player Card Placeholder -->
-        <div class="column is-four-fifths">
-            <section class="card" id="player-card">
-
-
-                <!-- Stat Card Start -->
-                <div class="card-content">
-                    <!-- Player Image -->
-                    <div class="media">
-                        <div class="media-left">   
-                        <figure class="image is-48x48">
-                            
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <!-- Player Name & Team -->
-                    <div class="media-content">
-                        <p class="title is-4" id="player-name">Lebron James</p>
-                        <p class="subtitle is-6" id="player-team">Los Angeles Lakers</p>
-                    </div>
-                </div>
-                    <!-- Stats in Table -->
-                <div class="content" id="player-id">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th><abbr title="Year">Year</abbr></th>
-                            <th><abbr title="Team">Team</abbr></th>
-                            <th><abbr title="Stat-1">Stat #1</abbr></th>
-                            <th><abbr title="Stat-2">Stat #2</abbr></th>
-                            <th><abbr title="Stat-3">Stat #3</abbr></th>
-                            <th><abbr title="Stat-4">Stat #4</abbr></th>
-                            <th><abbr title="Stat-text">Random Placeholder Text</abbr></th>
-                        </tr>
-                        </thead>
-                        <tfoot>
-
-                        </tfoot>
-                        <tbody>
-                        <tr>
-                            <th>2022</th>
-                            <td>Los Angeles</a> <strong>Lakers</strong>
-                            </td>
-                            <td>38</td>
-                            <td>23</td>
-                            <td>12</td>
-                            <td>3</td>
-
-                            <td>Random Text if Needed </td>
-                        </tr>
-                        
-                        </tbody>
-                    </table>
-                </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    </main> 
-   
-
-    <script src="./assets/js/script.js"></script>  
-    </body>
-    
+    <!-- import javascript files -->
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
