@@ -19,6 +19,18 @@
   </head>
 
   <body>
+    <section class="hero is-centered has-background-black mt-5 mb-5">
+      <div class="hero-body">
+        <div class="container has-text-warning">
+          <h1 class="title">
+            Stat-A-Baller
+          </h1>
+          <h2 class="subtitle">
+            NBA Statistics for Your Favorite Players!
+          </h2>
+        </div>
+      </div>
+    </section>
         <!------------ mx: use window.location to link other html ------------>
         <!-- chris: removed 4-star players to Carousel Feature  -->
         <!-- added div for carousel coded in javascript -->
@@ -146,12 +158,14 @@
      <!-- will delete later ⬆ -->
 
     <!------ mx: user input to search for players -------->
-    <div id="user-input-div" class="container py-5">
-          <p>Enter a player's name to search for recent historical performance</p>
-          <input id="user-input" class="input is-info" type="text" placeholder="Input here">
-          <button id="user-input-search-btn" class="button is-success">Search Player</button>
-    </div>
-
+    <section>
+      <div id="user-input-div" class="container py-5 is-pulled-right is-pulled-bottom">
+        <p>Enter a player's name to search for recent historical performance.</p>
+        <input id="user-input" class="input is-info" type="text" placeholder="Input here">
+        <button id="user-input-search-btn" class="button is-success">Search Player</button>
+      </div>
+    </section>
+    
     <!------ modal alert ------->
     <div id="modal-alert" class="modal">
       <div class="modal-background"></div>
