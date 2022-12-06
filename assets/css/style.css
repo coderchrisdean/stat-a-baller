@@ -100,10 +100,10 @@
     0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
 }
 
-
-#option-player-image img {
-  border-radius: 10px;
+#nba-data-header h5 {
+  margin-top: 7%;
 }
+
 
 .display-api-data {
   margin: 1% 5%;

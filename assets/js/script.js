@@ -54,9 +54,9 @@ var searchedPlayer = [];
 
 // ----------- mx: search input functions -----------
 searchBtn.addEventListener("click", (e) => {
-  console.log("hello1 " + getUserInput()); // no user input value
+  // console.log("hello1 " + getUserInput());
   e.stopPropagation();
-// ------ 待增加条件 -------
+  // ------ 待增加条件 -------
   if (getUserInput() === "") {
     // || userInput === null 待验证
     modalAlert.classList.add("is-active");
@@ -65,7 +65,7 @@ searchBtn.addEventListener("click", (e) => {
     // ----------- mx: save searched result to local storage -----------
     searchedPlayer.push(getUserInput());
     localStorage.setItem("userSearchPlayer", JSON.stringify(searchedPlayer));
-    console.log("this is" + searchedPlayer);
+    // console.log("this is" + searchedPlayer);
     searchPlayerID(getUserInput());
   }
   // return
@@ -80,34 +80,158 @@ searchBtn.addEventListener("click", (e) => {
 function searchPlayerID(userInput) {
   // var testPlayer = "Stephen Curry";
   var queryURL = `https://www.balldontlie.io/api/v1/players?search=${userInput}`;
-  //?seasons[]=2018&seasons[]=2015&player_ids[]=1&player_ids[]=2&postseason=true
   fetch(queryURL)
     .then((response) => response.json())
     .then((data) => {
       // console.log(data);
       var playerID = data.data[0].id;
       console.log(playerID);
-      searchPlayerStats(playerID);
+      // pass playerID to searchPlayerStats function
+      searchPlayerStats2019(playerID);
+      searchPlayerStats2018(playerID);
+      searchPlayerStats2017(playerID);
+      searchPlayerStats2016(playerID);
     })
     .catch((error) => {
       console.error(error);
     });
 }
 // use player id fetch again to get player stats
-function searchPlayerStats(playerID) {
-  //console.log(98);
+// for 2019 season
+function searchPlayerStats2019(playerID) {
   var playerIDs = [playerID];
-  var queryURL = ` https://www.balldontlie.io/api/v1/stats?player_ids[]=${playerIDs}`;
+  var queryURL = ` https://www.balldontlie.io/api/v1/stats?seasons[]=2019&player_ids[]=${playerIDs}`;
   fetch(queryURL)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
+      if (data.data.length === 0) {
+        // ⚠️待修改，需添加有些球员没有当年的数据的情况但有其他年份的数据的时候
+        modalAlert.classList.add("is-active");
+      }
+      // get data for: player name, team, points, rebounds, steals,assists
+      var fetchPlayerName2019 =
+        data.data[0].player.first_name + " " + data.data[0].player.last_name;
+      var fetchTeamName2019 = data.data[0].team.full_name;
+      var fetchPoints2019 = data.data[0].pts;
+      var fetchRebounds2019 = data.data[1].reb;
+      var fetchSteals2019 = data.data[1].stl;
+      var fetchAssists2019 = data.data[1].ast;
+      console.log(
+        "2019: " + fetchPlayerName2019,
+        fetchTeamName2019,
+        fetchPoints2019,
+        fetchRebounds2019,
+        fetchSteals2019,
+        fetchAssists2019
+      );
     })
     .catch((error) => {
       console.error(error);
     });
 }
 
+// for 2018 season
+function searchPlayerStats2018(playerID) {
+  var playerIDs = [playerID];
+  var queryURL = ` https://www.balldontlie.io/api/v1/stats?seasons[]=2018&player_ids[]=${playerIDs}`;
+  fetch(queryURL)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      if (data.data.length === 0) {
+        // ⚠️待修改，需添加有些球员没有当年的数据的情况但有其他年份的数据的时候
+        modalAlert.classList.add("is-active");
+      }
+      // get data for: player name, team, points, rebounds, steals,assists
+      var fetchPlayerName2018 =
+        data.data[0].player.first_name + " " + data.data[0].player.last_name;
+      var fetchTeamName2018 = data.data[0].team.full_name;
+      var fetchPoints2018 = data.data[0].pts;
+      var fetchRebounds2018 = data.data[1].reb;
+      var fetchSteals2018 = data.data[1].stl;
+      var fetchAssists2018 = data.data[1].ast;
+      console.log(
+        "2018: " + fetchPlayerName2018,
+        fetchTeamName2018,
+        fetchPoints2018,
+        fetchRebounds2018,
+        fetchSteals2018,
+        fetchAssists2018
+      );
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+// for 2017 season
+function searchPlayerStats2017(playerID) {
+  var playerIDs = [playerID];
+  var queryURL = ` https://www.balldontlie.io/api/v1/stats?seasons[]=2017&player_ids[]=${playerIDs}`;
+  fetch(queryURL)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      if (data.data.length === 0) {
+        // ⚠️待修改，需添加有些球员没有当年的数据的情况但有其他年份的数据的时候
+        modalAlert.classList.add("is-active");
+      }
+      // get data for: player name, team, points, rebounds, steals,assists
+      var fetchPlayerName2017 =
+        data.data[0].player.first_name + " " + data.data[0].player.last_name;
+      var fetchTeamName2017 = data.data[0].team.full_name;
+      var fetchPoints2017 = data.data[0].pts;
+      var fetchRebounds2017 = data.data[1].reb;
+      var fetchSteals2017 = data.data[1].stl;
+      var fetchAssists2017 = data.data[1].ast;
+      console.log(
+        "2017: " + fetchPlayerName2017,
+        fetchTeamName2017,
+        fetchPoints2017,
+        fetchRebounds2017,
+        fetchSteals2017,
+        fetchAssists2017
+      );
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+// for 2016 season
+function searchPlayerStats2016(playerID) {
+  var playerIDs = [playerID];
+  var queryURL = ` https://www.balldontlie.io/api/v1/stats?seasons[]=2016&player_ids[]=${playerIDs}`;
+  fetch(queryURL)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      if (data.data.length === 0) {
+        // ⚠️待修改，需添加有些球员没有当年的数据的情况但有其他年份的数据的时候
+        modalAlert.classList.add("is-active");
+      }
+      // get data for: player name, team, points, rebounds, steals,assists
+      var fetchPlayerName2016 =
+        data.data[0].player.first_name + " " + data.data[0].player.last_name;
+      var fetchTeamName2016 = data.data[0].team.full_name;
+      var fetchPoints2016 = data.data[0].pts;
+      var fetchRebounds2016 = data.data[0].reb;
+      var fetchSteals2016 = data.data[0].stl;
+      var fetchAssists2016 = data.data[0].ast;
+      console.log(
+        "2016: " + fetchPlayerName2016,
+        fetchTeamName2016,
+        fetchPoints2016,
+        fetchRebounds2016,
+        fetchSteals2016,
+        fetchAssists2016
+      );
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
 
 modalAlertCloseBtn.addEventListener("click", (e) => {
   e.stopPropagation();
