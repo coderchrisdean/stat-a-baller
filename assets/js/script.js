@@ -112,6 +112,7 @@ function searchPlayerStats2019(playerID) {
       searchedPlayer.rebounds2019 = fetchRebounds2019;
       searchedPlayer.steals2019 = fetchSteals2019;
       searchedPlayer.assists2019 = fetchAssists2019;
+
       // check the value
       console.log("line 1" + JSON.stringify(searchedPlayer));
       searchPlayerStats2018(playerID);

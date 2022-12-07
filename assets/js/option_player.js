@@ -37,28 +37,27 @@ function displaySearchedPlayer(searchedPlayer) {
 console.log(userSearchPlayer.playerName);
 console.log(playerName);
 playerName.innerHTML =  userSearchPlayer.playerName;
-//Cannot set properties of null (setting 'innerHTML')
-playerTeam.innerHTML =  JSON.stringify(userSearchPlayer.team);
+playerTeam.innerHTML =  userSearchPlayer.team;
 // 2019
-points2019.innerHTML =  JSON.stringify(userSearchPlayer.points2019);
-rebounds2019.innerHTML =  JSON.stringify(userSearchPlayer.rebounds2019);
-steals2019.innerHTML =  JSON.stringify(userSearchPlayer.steals2019);
-assists2019.innerHTML =  JSON.stringify(userSearchPlayer.assists2019);
+points2019.innerHTML =  userSearchPlayer.points2019;
+rebounds2019.innerHTML =  userSearchPlayer.rebounds2019;
+steals2019.innerHTML =  userSearchPlayer.steals2019;
+assists2019.innerHTML =  userSearchPlayer.assists2019;
 // 2018
-points2018.innerHTML =  JSON.stringify(userSearchPlayer.points2018);
-rebounds2018.innerHTML =  JSON.stringify(userSearchPlayer.rebounds2018);
-steals2018.innerHTML =  JSON.stringify(userSearchPlayer.steals2018);
-assists2018.innerHTML =  JSON.stringify(userSearchPlayer.assists2018);
+points2018.innerHTML =  userSearchPlayer.points2018;
+rebounds2018.innerHTML =  userSearchPlayer.rebounds2018;
+steals2018.innerHTML =  userSearchPlayer.steals2018;
+assists2018.innerHTML =  userSearchPlayer.assists2018;
 // 2017
-points2017.innerHTML =  JSON.stringify(userSearchPlayer.points2017);
-rebounds2017.innerHTML =  JSON.stringify(userSearchPlayer.rebounds2017);
-steals2017.innerHTML =  JSON.stringify(userSearchPlayer.steals2017);
-assists2017.innerHTML =  JSON.stringify(userSearchPlayer.assists2017);
+points2017.innerHTML =  userSearchPlayer.points2017;
+rebounds2017.innerHTML =  userSearchPlayer.rebounds2017;
+steals2017.innerHTML =  userSearchPlayer.steals2017;
+assists2017.innerHTML =  userSearchPlayer.assists2017;
 // 2016
-points2016.innerHTML =  JSON.stringify(userSearchPlayer.points2016);
-rebounds2016.innerHTML =  JSON.stringify(userSearchPlayer.rebounds2016);
-steals2016.innerHTML =  JSON.stringify(userSearchPlayer.steals2016);
-assists2016.innerHTML =  JSON.stringify(userSearchPlayer.assists2016);
+points2016.innerHTML =  userSearchPlayer.points2016;
+rebounds2016.innerHTML =  userSearchPlayer.rebounds2016;
+steals2016.innerHTML =  userSearchPlayer.steals2016;
+assists2016.innerHTML =  userSearchPlayer.assists2016;
 }
 
 // ----------- ⬆ mx: divider ⬆ -----------
