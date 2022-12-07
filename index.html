@@ -34,7 +34,7 @@
         <!------------ mx: use window.location to link other html ------------>
         <!-- chris: removed 4-star players to Carousel Feature  -->
         <!-- added div for carousel coded in javascript -->
-        <section class = "is-hidden" id="carousel has-background-orange has-text-white mt-5 mb-5">
+        <section class = "section" id="carousel">
             
           <div class="columns">
           <div id="slider" class="container">
@@ -164,8 +164,8 @@
      <!-- will delete later ⬆ -->
 
     <!------ mx: user input to search for players -------->
-    <section class="is-centered">
-      <div id="user-input-div" class="container py-5 is-pulled-right is-pulled-bottom is-centered">
+    <section class="section is-small">
+      <div class="is-centered" id="user-input-div" class="container py-5 is-pulled-right is-pulled-bottom is-centered">
         <p>Enter a player's name to search for recent historical performance.</p>
         <input id="user-input" class="input is-info" type="text" placeholder="Input here">
         <button id="user-input-search-btn" class="button is-success">Search Player</button>
@@ -192,38 +192,38 @@
 
     <!-------- mx: modal pop up when click dropdown list option --------->
     <!-- Wrapped in section tag -->
-    <section class="is-centered">
-    <div id="modal-option-player-div" class="modal">
-      <div class="modal-background"></div>
-        <div class="modal-card">
-        <!-- changed header to div -->
-        <div class="modal-card-head">
-          <p class="modal-card-title">
-            Select a player for more details
-          </p>
-        </div>
-        <!-- may need to add a user search input with auto complete:player's name -->
-        <div class="modal-card-body">
-          <!-- changed from section to div -->
-          <ul>
-            <li id="modal-li-1" class="modal-list py-1"><span id="modal-player1-span">player 1</span></li>
-            <li id="modal-li-2" class="modal-list py-1"><span id="modal-player2-span">player 2</span></li>
-            <li id="modal-li-3" class="modal-list py-1"><span id="modal-player3-span">player 3</span></li>
-          </ul>
-        </div>
-        <!-- changed from footer to div -->
-        <div class="modal-card-foot">
-          <button id="modal-delete-btn" class="button" aria-label="close">Cancel</button>
+      <section class="section is-centered">
+        <div id="modal-option-player-div" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+          <!-- changed header to div -->
+          <div class="modal-card-head">
+            <p class="modal-card-title">
+              Select a player for more details
+            </p>
+          </div>
+          <!-- may need to add a user search input with auto complete:player's name -->
+          <div class="modal-card-body">
+            <!-- changed from section to div -->
+            <ul>
+              <li id="modal-li-1" class="modal-list py-1"><span id="modal-player1-span">player 1</span></li>
+              <li id="modal-li-2" class="modal-list py-1"><span id="modal-player2-span">player 2</span></li>
+              <li id="modal-li-3" class="modal-list py-1"><span id="modal-player3-span">player 3</span></li>
+            </ul>
+          </div>
+          <!-- changed from footer to div -->
+          <div class="modal-card-foot">
+            <button id="modal-delete-btn" class="button" aria-label="close">Cancel</button>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
+      <br>
     </section>
     
 
     <!-- import javascript files -->
     <script src="./assets/js/carousel.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
     <script src="./assets/js/option_player.js"></script>
   </body>
 </html>
