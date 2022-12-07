@@ -46,9 +46,11 @@ teamArr.forEach((team) => {
   });
 });
 
-// ----------- home page: hide card -----------
-// chris -- may need to debug ⬇ ⬇ ⬇ ⬇ error in console ----
-document.querySelector("#lebron-james").style.display = " is-hidden";
+// ----------- mx: home page - modal functions -----------
+modalDeleteBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  modalDiv.classList.remove("is-active");
+});
 
 modalLiArr.forEach((li) => {
   li.addEventListener("click", (e) => {
@@ -57,30 +59,130 @@ modalLiArr.forEach((li) => {
   });
 });
 
+// ----------- mx: search input & modal alert -----------
+// var userInput = document.querySelector("#user-input");
+function getUserInput() {
+  return document.querySelector("#user-input").value.trim().toLowerCase();
+}
+var searchBtn = document.querySelector("#user-input-search-btn");
+var modalAlert = document.querySelector("#modal-alert");
+var modalAlertCloseBtn = document.querySelector("#modal-alert-close-btn");
+var searchedPlayer = [];
 
-// ----------- ⬆ mx: divider ⬆ -----------
-
-
-
+// ----------- mx: search input functions -----------
+searchBtn.addEventListener("click", (e) => {
+  console.log("hello1 " + getUserInput()); // no user input value
+  e.stopPropagation();
+// ------ 待增加条件 -------
+  if (getUserInput() === "") {
+    // || userInput === null 待验证
+    modalAlert.classList.add("is-active");
+  } else {
+    modalAlert.classList.remove("is-active");
+    // ----------- mx: save searched result to local storage -----------
+    searchedPlayer.push(getUserInput());
+    localStorage.setItem("userSearchPlayer", JSON.stringify(searchedPlayer));
+    console.log("this is" + searchedPlayer);
+    searchPlayerID(getUserInput());
+  }
+  // return
+});
 
 // ----------- mx: fetch from api -----------
-var allPlayersURL = "https://www.balldontlie.io/api/v1/players?search=lebron" 
-fetch (allPlayersURL)
-  .then((response) => response.json())
-  .then((data) => {
-	console.log(data);
-	  });
-	  // returns 25 arrays of players in "data" object by default
+// 需要fetch两次
+// 第一次fetch是为了获取球员的id，通过user input
+// 第二次fetch是为了获取球员的详细信息，通过id
+// 获取的信息display在option_player_page.html上
+// from balldontlie api
+function searchPlayerID(userInput) {
+  // var testPlayer = "Stephen Curry";
+  var queryURL = `https://www.balldontlie.io/api/v1/players?search=${userInput}`;
+  //?seasons[]=2018&seasons[]=2015&player_ids[]=1&player_ids[]=2&postseason=true
+  fetch(queryURL)
+    .then((response) => response.json())
+    .then((data) => {
+      // console.log(data);
+      var playerID = data.data[0].id;
+      console.log(playerID);
+      searchPlayerStats(playerID);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+// use player id fetch again to get player stats
+function searchPlayerStats(playerID) {
+  //console.log(98);
+  var playerIDs = [playerID];
+  var queryURL = ` https://www.balldontlie.io/api/v1/stats?player_ids[]=${playerIDs}`;
+  fetch(queryURL)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
 
-
-// ----------- ⬆ mx: divider ⬆ -----------
-
+// for 2016 season
+function searchPlayerStats2016(playerID) {
+  var playerIDs = [playerID];
+  var queryURL = ` https://www.balldontlie.io/api/v1/stats?seasons[]=2016&player_ids[]=${playerIDs}`;
+   fetch(queryURL) //use a return will create a promise, blocking
+    .then((response) => response.json())
+    .then((data) => {
+      //  console.log(data);
+      if (data.data.length === 0) {
+        modalAlert.classList.add("is-active");
+      }
+      // get data for: player name, team, points, rebounds, steals,assists
+      var fetchPlayerName2016 =
+        data.data[0].player.first_name + " " + data.data[0].player.last_name;
+      var fetchTeamName2016 = data.data[0].team.full_name;
+      var fetchSeason2016 = data.data[0].game.date;
+      var fetchPoints2016 = data.data[0].pts;
+      var fetchRebounds2016 = data.data[0].reb;
+      var fetchSteals2016 = data.data[0].stl;
+      var fetchAssists2016 = data.data[0].ast;
+      // console.log(
+      //   "2016: " + fetchSeason2016,
+      //   fetchPlayerName2016,
+      //   fetchTeamName2016,
+      //   fetchPoints2016,
+      //   fetchRebounds2016,
+      //   fetchSteals2016,
+      //   fetchAssists2016
+      // );
+      // save data to searchedPlayer object
+      searchedPlayer.season2016 = fetchSeason2016;
+      searchedPlayer.points2016 = fetchPoints2016;
+      searchedPlayer.rebounds2016 = fetchRebounds2016;
+      searchedPlayer.steals2016 = fetchSteals2016;
+      searchedPlayer.assists2016 = fetchAssists2016;
+      // check the value
+      console.log("line 4" + JSON.stringify(searchedPlayer));
+      saveSearchedPlayer();
+    })
+    .catch((error) => {
+      console.error(error);
+      if (error.name === "TypeError") {
+        modalAlert.classList.add("is-active");
+      }
+    });
+}
 
 modalAlertCloseBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   modalAlert.classList.remove("is-active");
 });
 
+// ----------- mx: save searched result to local storage -----------
+function saveSearchedPlayer() {
+  // console.log("this is " + JSON.stringify(searchedPlayer));
+  localStorage.setItem("userSearchPlayer", JSON.stringify(searchedPlayer));
+  window.location.href = "option_player_page.html";
+}
 // ----------- ⬆ mx: divider ⬆ -----------
 
 
