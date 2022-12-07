@@ -1,0 +1,28 @@
+:root{
+    background-color: rgb(69, 31, 31);
+    
+}
+.right{
+    /* display: flex; */
+    /* background-color:rgb(101, 45, 45); */
+    /* align-items:center; */
+    margin-right:auto;
+   
+}
+.img{
+    content:url(/assets/images/starPlayers/NikolaJokic.jpg);
+    width: 256px;    
+}
+
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+.table td.is-vcentered,
+.table th.is-vcentered {
+  vertical-align: middle;
+}
