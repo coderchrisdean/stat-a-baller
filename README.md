@@ -1,36 +1,48 @@
-# group_project_one
-Repo for first group project
 
-## Project Requirements
-* Use a CSS framework other than Bootstrap.
+# Project Title
 
-* Be deployed to GitHub Pages.
+A brief description of what this project does and who it's for
 
-* Be interactive (in other words, accept and respond to user input).
+# Stat-A-Baller
 
-* Use modals instead of alerts, confirms, or prompts.
+Stat-A-Baller is a web application that provides users with detailed statistics for NBA players. 
 
-* Use client-side storage to store persistent data.
+## Description
+With Stat-A-Baller, users can easily search for any player and view their stats, including points per game, rebounds, assists, and more. The user interface is intuitive and easy to use, making it the perfect tool for any NBA fan looking to stay up-to-date on the latest player statistics.
 
-* Be responsive.
+## Features
+Search bar for easily finding any NBA player
+Detailed player statistics, including points per game, rebounds, and assists
+Ability to add favorite players to a "favorites" section for quick access (coming soon)
+Picture of the player when their name is clicked on
+Background of hall of fame NBA players as background pictures on the webpage
 
-* Have a polished UI.
+## Getting Started
+-Visit the Stat-A-Baller website at https://coderchrisdean.github.io/stat-a-baller/
+-Use the search bar to find a star NBA player
+-Click on the player to view their stats in detail
 
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, and so on).
+## Deployed URL
+https://coderchrisdean.github.io/stat-a-baller/
 
-* Have a quality README (including a unique name, description, technologies used, screenshot, and link to the deployed application).
+## Link to Repository
+https://github.com/coderchrisdean/stat-a-baller
 
-## Presentation Requirements
-[Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit#slide=id.p)
+## Requirements
+-Internet connection
+-Web browser
 
-*Elevator pitch: A one-minute description of your application.
+## Built With
+-Microsoft Visual Studio Code
+-HTML5
+-JavaScript
+-CSS
+-Bulma.io
+-Bulma.io plugin/extension for carousel feature.
 
-*Concept: What is your user story? What was your motivation for development?
+## Authors
 
-*Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-
-*Demo: Show your stuff!
-
-*Directions for future development.
-
-*Links to the deployed application and the GitHub repository.
+- Christopher Dean [@coderchrisdean](https://www.github.com/coderchrisdean)
+- Seth Davis [@githubusername ](https://www.github.com/githubusername)
+- Meng [@githubusername](https://www.github.com/githubusername)
+- Grace [@githubusername](https://www.github.com/githubusername)
