@@ -1,3 +1,8 @@
+
+/* import bulma css from: https://bulma.io/documentation/overview/start/ */
+/* @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" */
+
+
 /* ---------- mx: google fonts ------------ */
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -5,6 +10,7 @@
 /* ------------------ chris divider ----------------- */
 /* --------- carousel css----------- */
 .slider-text {
+    background-color: black;
     position: absolute;
     right: 0;
     bottom: 0
@@ -32,7 +38,7 @@
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   transition: 2s ease;
@@ -48,7 +54,7 @@
 
 
 .numbertext {
-  color: #f2f2f2;
+  
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -126,6 +132,12 @@
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
+
+
+/* ----------- ⬆ mx: divider ⬆ ----------- */
+
+
+/* ----------- ⬆ mx: divider ⬆ ----------- */
 
 /* ----------- mx: search input ---------- */
 #user-input-div {

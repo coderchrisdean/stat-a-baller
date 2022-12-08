@@ -2387,12 +2387,12 @@
 bulmaCarousel.attach(
     "#slider",
     {
-      slidesToScroll: 1,
-      slidesToShow: 1,
+      slidesToScroll: 2,
+      slidesToShow: 2,
       infinite: true,
       autoplay: true,
     },
-    3000
+    2000
   );
   
 
