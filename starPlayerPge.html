@@ -1,115 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+    <link rel="stylesheet" href="./assets/css/starPlayer.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/debug.css" /> -->
     <title>Star Player!</title>
-  </head>
+    <style>
 
-  <body>
-    <!-- Image holder -->
-    <section class="hero is-fullheight has-background-black">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title is-1">Star Player Image</h1>
-                <h2 class="subtitle">columns need to be moved down</h2>
-                <figure class="image">
-                    <img src="./assets/images/starPlayers/jokic-analyst-banner-1.jpg">
-                </figure>
-            </div>
-        </div>
-    </section>
+    </style>
+</head>
 
-    <!-- column area -->
-    <div class="columns">
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
-                    <h2 class="title">"COUNTRY"</h2>
-                    <h3 class="subtitle">Serbia</h3>
-                </div>
-                <footer class="card-footer">
-                <div class="card-footer-item">
-                    <a href="#" class="button is-success">
-                        <i class="fa fa-thumbs-o-up"></i>
-                    </a>
-                </div>
-                <div class="card-footer-item">
-                    <a href="#" class="button is-info">
-                        <i class="fa fa-thumbs-o-up"></i>
-                    </a>
-                </div>
-                <div class="card-footer-item">
-                    <a href="#" class="button is-danger">
-                        <i class="fa fa-thumbs-o-up"></i>
-                    </a>
-                </div>
-            </footer>
-            </div>
+<body>
+    <div class="place-center">
+        <section class="hero">
+            <div class="hero-body">
 
-        </div>
-        <div class="column"><div class="card">
-            <div class="card-content">
-                <h2 class="title">"WEIGHT"</h2>
-                <h3 class="subtitle">284LB</h3>
+                <div class="img center" id="Nikola_ID" style="max-width: 512px;">
+                    <img src="./assets/images/N.png" alt="J" />
+                </div>
+                <div class="img center" id="Lebron_ID" style="display:none">
+                    <img src="./assets/images/Lebron.png" alt="N" style="max-width: 512px;"/>
+                </div>
+                <div class="img center" id="Steph_ID" style="display:none">
+                    <img src="./assets/images/S.png" alt="J" style="max-width: 512px;"/>
+                </div>               
+                <div class="img center" id="Giannis_ID" style="display:none">
+                    <img src="./assets/images/AG.png" alt="G" style="max-width: 512px;" />
+                </div>
+
+                
             </div>
-            <footer class="card-footer">
-            <div class="card-footer-item">
-                <a href="#" class="button is-success">
-                    <i class="fa fa-thumbs-o-up"></i>
+        </section>
+        <!-- column! -->
+        <section class="section">
+            <!-- <div class="container"> -->
+            <div class="columns has-background-primary-light">
+                <div class="column">
+
+                </div>
+                <div class="column">
+
+                </div>
+                <div class="column">
+
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+
+        <section>
+            <div>
+                <a href="./starPlayerPge.html" onclick="return false;">
+    
+                    <div id="Nikola">
+                        Nikola Jokic
+                    </div>
+                </a>
+                <a href="./starPlayerPge.html" onclick="return false;">
+    
+                    <div id="Giannis">
+                        Giannis Antetokounmpo
+                    </div>
+                </a>
+                <a href="./starPlayerPge.html" onclick="return false;">
+    
+                    <div id="Lebron">
+                        LeBron James
+                    </div>
+                </a>
+                <a href="./starPlayerPge.html" onclick="return false;">
+    
+                    <div id="Steph">
+                        Stephen Curry
+                    </div>
                 </a>
             </div>
-            <div class="card-footer-item">
-                <a href="#" class="button is-info">
-                    <i class="fa fa-thumbs-o-up"></i>
-                </a>
-            </div>
-            <div class="card-footer-item">
-                <a href="#" class="button is-danger">
-                    <!-- <i class="fa fa-thumbs-o-up"></i> -->
-                </a>
-            </div>
-        </footer>
-        </div></div>
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
-                    <h2 class="title">"HEIGHT"</h2>
-                    <h3 class="subtitle">6'11"</h3>
-                </div>
-                <footer class="card-footer">
-                <div class="card-footer-item">
-                    <a href="#" class="DATA1">
-                        <i class="fa fa-thumbs-o-up"></i>
-                    </a>
-                </div>
-                <div class="card-footer-item">
-                    <a href="#" class="DATA2">
-                        <!-- <i class="fa fa-thumbs-o-up"></i> -->
-                    </a>
-                </div>
-                <div class="card-footer-item">
-                    <a href="#" class="DATA3">
-                        <i class="fa fa-thumbs-o-up"></i>
-                    </a>
-                </div>
-            </footer>
-            </div>
-        </div>
+        </section>
+
+        <a id="go-back" href="./index.html">
+            <button class="go-back-btn button is-dark is-medium">
+                Go Back To Home Page
+            </button>
+        </a>
     </div>
-<script src="starPlayerPge.js">
+    <script src="./assets/js/starPlayerPge.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/option_player.js"></script>
+    <script src="./assets/js/ImageStarPlayers.js"></script>
 
-</script>
-  </body>
+</body>
+
 </html>
