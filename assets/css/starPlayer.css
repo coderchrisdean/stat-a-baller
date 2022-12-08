@@ -1,0 +1,43 @@
+.place-center {
+    background: url(../images/starPlayers/344223.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.img {
+    /* content:url(/assets/images/J.png); */
+    width: 256px;
+    margin: auto;
+
+}
+
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+/* .ceter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #021a36
+        } */
+/* .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #021a36
+        } */
+
+
+
+
+/* 
+.table td.is-vcentered,
+.table th.is-vcentered {
+  vertical-align: middle;
+} */
