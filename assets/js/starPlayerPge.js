@@ -10,6 +10,13 @@ var img_Nikola = document.getElementById("Nikola_ID");
 var img_Lebron = document.getElementById("Lebron_ID");
 var img_Steph = document.getElementById("Steph_ID");
 
+// pasting the stats
+var weight = document.getElementById("weight");
+var position = document.getElementById("position");
+var height = document.getElementById("height");
+var team = document.getElementById("team");
+// var assists2019 = document.getElementById("2019-assists");
+
 var imgArray = [img_Giannis, img_Nikola, img_Lebron, img_Steph];
 
 function showImg(img) {
@@ -21,16 +28,20 @@ function showImg(img) {
 
 player_Giannis.addEventListener("click", function (e) {
     showImg(img_Giannis);
+    getPlayerId("Giannis Antetokounmpo")
     // window.location=document.getElementById('Giannis_ID').href;
 });
 player_Nikola.addEventListener("click", function (e) {
     showImg(img_Nikola);
+    getPlayerId("Nikola Jokic")
 });
 player_Lebron.addEventListener("click", function (e) {
     showImg(img_Lebron);
+    getPlayerId("Lebron James")
 });
 player_Steph.addEventListener("click", function (e) {
     showImg(img_Steph);
+    getPlayerId("Stephen Curry")
 });
 
 // addEventListener('click', (event) => {});
@@ -43,218 +54,45 @@ player_Steph.addEventListener("click", function (e) {
 
 //----------------------------- HT: starPlayer design END-----------------------------//
 
-var statSet = document.querySelector("#star-stats");
-var lebronStar= document.querySelector("#demo_star_player_1")
-var giannisStar= document.querySelector("#demo_star_player_2")
-var stephStar= document.querySelector("#demo_star_player_3")
-var nikolaStar= document.querySelector("#demo_star_player_4")
+// Player Characteristics Stats 
 
-// Lebron James Stats
-var getLebron= function(){
-    getPlayerId("Lebron James")
-}
 var getPlayerId = function (playerName) {
-    var playerId = "https://balldontlie.io/api/v1/players?search=" + playerName;
+    console.log(playerName);
+    var playerStats = `https://www.balldontlie.io/api/v1/players?search=${playerName}`;
 
-    // run search to fetch
-    fetch(playerId)
-        .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (data) {
-                        // sends id to get the actual players stats
-                        getPlayerStats(data.id)
-                    });
-                } else {
-                    alert('Error: ' + response.statusText);
-                }
+    fetch(playerStats)
+        .then((response) => response.json())
+            .then((data) => {
+                var playerID = data.data[0].id;
+                console.log(playerID);
+                // sends id to get the actual players stats
+                getPlayerStats(playerID);
             })
-            .catch(function (error) {
-                console.log('Unable to get stats');
-            });
+        .catch((error) => {
+            if (error.name === "TypeError") {
+                console.log('Unable to get player ID');
+            }
+        });
     }
 
 
 var getPlayerStats = (id) => {
-    let playerStats = "https://www.balldontlie.io/api/v1/season_averages?player_ids[]=" + id
+    let playerStats = `https://www.balldontlie.io/api/v1/players/${id}`;
+    console.log(playerStats);
 
-    // fetch all of the players stats
+    // fetch player by id
     fetch(playerStats)
-        .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (data) {
-
-                });
-                } else {
-                    alert('Error: ' + response.statusText);
-                }
+        .then((response) => response.json())
+            .then((data) => {
+                // set html to our data
+                position.innerHTML = data.position;
+                height.innerHTML = data.height_feet + "'" + data.height_inches;
+                team.innerHTML = data.team.full_name;
+                weight.innerHTML = data.weight_pounds;
             })
-            .catch(function (error) {
-                alert('Unable to get stats');
-            });
-
-}
-
-
-// getPlayerId
-lebronStar.addEventListener('click', getLebron);
-
-// ----------- home page: hide card -----------
-document.querySelector("#lebron-james").style.display = "none";
-
-
-
-// Steph Curry Stats
-var getSteph= function(){
-    getPlayerId("Steph Curry")
-}
-var getPlayerId = function (playerName) {
-    var playerId = "https://balldontlie.io/api/v1/players?search=" + playerName;
-
-    // run search to fetch
-    fetch(playerId)
-        .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (data) {
-                        // sends id to get the actual players stats
-                        getPlayerStats(data.id)
-                    });
-                } else {
-                    alert('Error: ' + response.statusText);
-                }
-            })
-            .catch(function (error) {
+        .catch((error) => {
+            if (error.name === "TypeError") {
                 console.log('Unable to get stats');
-            });
-    }
-
-
-const getPlayerStats = (id) => {
-    let playerStats = "https://www.balldontlie.io/api/v1/season_averages?player_ids[]=" + id
-
-    // fetch all of the players stats
-    fetch(playerStats)
-        .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (data) {
-
-                });
-                } else {
-                    alert('Error: ' + response.statusText);
-                }
-            })
-            .catch(function (error) {
-                alert('Unable to get stats');
-            });
-
+            }
+        });
 }
-
-
-// getPlayerId
-stephStar.addEventListener('click', getSteph);
-
-// ----------- home page: hide card -----------
-document.querySelector("#steph-curry").style.display = "none";
-
-
-// Giannis Stats
-var getGiannis= function(){
-    getPlayerId("Giannis Antetokounmpo")
-}
-var getPlayerId = function (playerName) {
-    var playerId = "https://balldontlie.io/api/v1/players?search=" + playerName;
-
-    // run search to fetch
-    fetch(playerId)
-        .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (data) {
-                        // sends id to get the actual players stats
-                        getPlayerStats(data.id)
-                    });
-                } else {
-                    alert('Error: ' + response.statusText);
-                }
-            })
-            .catch(function (error) {
-                console.log('Unable to get stats');
-            });
-    }
-
-
-const getPlayerStats = (id) => {
-    let playerStats = "https://www.balldontlie.io/api/v1/season_averages?player_ids[]=" + id
-
-    // fetch all of the players stats
-    fetch(playerStats)
-        .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (data) {
-
-                });
-                } else {
-                    alert('Error: ' + response.statusText);
-                }
-            })
-            .catch(function (error) {
-                alert('Unable to get stats');
-            });
-
-}
-
-
-// getPlayerId
-nikolaStar.addEventListener('click', getNikola);
-
-// ----------- home page: hide card -----------
-
-
-// Nikola Stats
-var getNikola= function(){
-    getPlayerId("Nikola Jokic")
-}
-var getPlayerId = function (playerName) {
-    var playerId = "https://balldontlie.io/api/v1/players?search=" + playerName;
-
-    // run search to fetch
-    fetch(playerId)
-        .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (data) {
-                        // sends id to get the actual players stats
-                        getPlayerStats(data.id)
-                    });
-                } else {
-                    alert('Error: ' + response.statusText);
-                }
-            })
-            .catch(function (error) {
-                console.log('Unable to get stats');
-            });
-    }
-
-
-const getPlayerStats = (id) => {
-    let playerStats = "https://www.balldontlie.io/api/v1/season_averages?player_ids[]=" + id
-
-    // fetch all of the players stats
-    fetch(playerStats)
-        .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (data) {
-
-                });
-                } else {
-                    alert('Error: ' + response.statusText);
-                }
-            })
-            .catch(function (error) {
-                alert('Unable to get stats');
-            });
-
-}
-
-
-// getPlayerId
-nikolaStar.addEventListener('click', getNikola);
-
-// ----------- home page: hide card -----------
