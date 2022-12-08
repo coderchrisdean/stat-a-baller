@@ -7,12 +7,13 @@
 <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
 <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+<body>
 
-
-    <!-- Hero -->
-    <section class="hero is-info">
+        <!-- Hero -->
+        <section class="hero is-info">
         <!-- Enter Block for Space in Page -->
         <div class="block"></div>
+        <!-- Nav -->
         <nav>
             <div class="navbar">
                 <div class="container">
@@ -44,61 +45,62 @@
                 </div>
             </div>
         </nav>
-<!-- Project Title -->
+        <!-- Project Title -->
 
-<section class="hero-body">
-    <div class="container has-text-centered">
-        <!-- Enter Carousel Feature -->
-        <section id="carousel">
-            
-            <div class="columns">
-            <div id="slider" class="container">
-                <!-- Player Giannis Antetokounmpo -->
-            <div class="card column">
-                <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                        <img src="./assets/images/players/Antetokounmpo_Giannis-Action.jpg" alt="Giannis Antetokounmpo" />
-                    </figure>
-                </div>
-
-            </div>
-
-                <!-- Player Nikola Jokik -->
-            <div class="card column">
-                <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                        <img src="./assets/images/players/Jokik_Nikola_action.jpg" alt="Nikola Jokik" />
-                    </figure>
-                </div>
-
-            </div>
-
-                <!-- Player Lebron James -->
-            <div class="card column">
-                <div class="card-image">
+    <section class="hero-body">
+        <div class="container has-text-centered">
+            <!-- Enter Carousel Feature -->
+            <section id="carousel">
+                
+                <div class="columns">
+                <div id="slider" class="container">
+                    <!-- Player Giannis Antetokounmpo -->
+                <div class="card column">
+                    <div class="card-image">
                         <figure class="image is-16by9 is-covered">
-                            <img src="./assets/images/players/James_Lebron_Action.jfif" alt="Lebron James" />
+                            <!-- Link to External Page -->
+                            <a href="" class="link"><img src="./assets/images/players/Antetokounmpo_Giannis-Action.jpg" alt="Giannis Antetokounmpo" /></a>
                         </figure>
+                    </div>
+
                 </div>
 
-            </div>
+                    <!-- Player Nikola Jokik -->
+                <div class="card column">
+                    <div class="card-image">
+                        <figure class="image is-16by9 is-covered">
+                            <img src="./assets/images/players/Jokik_Nikola_action.jpg" alt="Nikola Jokik" />
+                        </figure>
+                    </div>
+
+                </div>
+
+                    <!-- Player Lebron James -->
+                <div class="card column">
+                    <div class="card-image">
+                            <figure class="image is-16by9 is-covered">
+                                <img src="./assets/images/players/James_Lebron_Action.jfif" alt="Lebron James" />
+                            </figure>
+                    </div>
+
+                </div>
+                
+                <!-- Player Steph Curry -->
+                <div class="card column">
+                    <div class="card-image">
+                        <figure class="image is-16by9 is-covered">
+                            <img src="./assets/images/players/Curry_Steph-Action.jpg" alt="Lebron James" />
+                        </figure>
+                    </div>
+                </div>
+        </div>
+            </section>
+
             
-             <!-- Player Steph Curry -->
-            <div class="card column">
-                <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                        <img src="./assets/images/players/Curry_Steph-Action.jpg" alt="Lebron James" />
-                    </figure>
-                </div>
-            </div>
-    </div>
-        </section>
-
-        
-        
-</section>
-<!-- Player Buttons -->
-<section class="container">
+            
+    </section>
+    <!-- Player Buttons -->
+    <section class="container">
     <div class="hero-foot">
             <nav class="navbar">
                 
@@ -115,12 +117,13 @@
     </section>
     <!-- Get Started Button to Expand Search Option -->
     <div class="block"></div>
-    <section class="container">
-        <button id = "btmGetStarted" class="button is-danger is-medium"><a class="is-link"></a>Get Started</a></button>
-    </section>
+    <!-- <section class="container">
+        <button id = "btnGetStarted" class="button is-danger is-medium"><a class="is-link"></a>Get Started</a></button>
+    </section> -->
     <!-- ID: searchForPlayer -->
     <!------ mx: user input to search for players -------->
-    <section id = "searchForPlayer" class="section is-hidden">
+    <!-- Styled Search -->
+    <!-- <section id = "searchForPlayer" class="section is-hidden">
         <article class="message is-warning">
             <div class="message-header">
                 <p>Search for Player</p>
@@ -136,7 +139,16 @@
                 </div>
             </div>
         </article>
-    </section>
+    </section> -->
+
+
+        <section class="section is-small">
+        <div class="is-centered" id="user-input-div" class="container py-5 is-pulled-right is-pulled-bottom is-centered">
+          <p>To search for a player's recent historical performance, enter their name in the search field.</p>
+          <input id="user-input" class="input is-info" type="text" placeholder="Input here">
+          <button id="user-input-search-btn" class="button is-success">Search Player</button>
+        </div>
+        </section>
     
       
       <!------ Alert - Modal------->
@@ -200,12 +212,12 @@
         <a class="navbar-item" href="#"><span class="tag is-black">@Chris</span></a>
         <a class="navbar-item" href="#"><span class="tag is-black">@Grace</span></a>
         <a class="navbar-item" href="#"><span class="tag is-black">@Seth</span></a>
-        <a class="navbar-item" href="#"><span class="tag is-black">@Mung</span></a>
+        <a class="navbar-item" href="#"><span class="tag is-black">@Meng</span></a>
     </div>
 </section>
 
       
-      
+<script src=".assets/js/script.js"></script>      
 <script src="./assets/js/buildhtml.js"></script>           
 <script src="./assets/js/carousel.js"></script>  
 </body>
