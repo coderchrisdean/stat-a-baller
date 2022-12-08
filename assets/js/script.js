@@ -13,8 +13,6 @@
 // 	document.querySelector("#display_player-1").classList.remove("is-hidden");
 // });
 
-
-
 // ----------- ⬇ mx: divider ⬇ -----------
 // ----------- mx: home page - option player list variables -----------
 const dropdownBtn = document.querySelector("#dropdown-btn");
@@ -34,10 +32,10 @@ const modalLi3 = document.querySelector("#modal-li-3");
 var modalLiArr = [modalLi1, modalLi2, modalLi3];
 
 // ----------- mx: home page - option player list functions -----------
-dropdownBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  dropdownList.classList.toggle("is-active");
-});
+// dropdownBtn.addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   dropdownList.classList.toggle("is-active");
+// });
 
 teamArr.forEach((team) => {
   team.addEventListener("click", (e) => {
@@ -185,4 +183,33 @@ function saveSearchedPlayer() {
 }
 // ----------- ⬆ mx: divider ⬆ -----------
 
+//----------------------------------------H.Than: StarPlayers Section Start---------------------------------//
 
+var player_Giannis = document.querySelector("#btnGA");
+var player_Nikola = document.querySelector("#btnNJ");
+var player_Lebron = document.querySelector("#btnLJ");
+var player_Steph = document.querySelector("#btnSC");
+
+// var player_Giannis = document.querySelector("#btnGA");
+// console.log(player_Giannis);
+
+player_Giannis.addEventListener("click", function (e) {        
+  localStorage.setItem("currentPlayer", "Giannis_ID");
+  window.location.href = "starPlayerPge.html";  
+});
+
+player_Nikola.addEventListener("click", function (e) {        
+  localStorage.setItem("currentPlayer", "Nikola_ID");
+  window.location.href = "starPlayerPge.html";  
+});
+
+player_Lebron.addEventListener("click", function (e) {        
+  localStorage.setItem("currentPlayer", "Lebron_ID");
+  window.location.href = "starPlayerPge.html";  
+});
+
+player_Steph.addEventListener("click", function (e) {        
+  localStorage.setItem("currentPlayer", "Steph_ID");
+  window.location.href = "starPlayerPge.html";  
+});
+//----------------------------------------H.Than: StarPlayers Section End---------------------------------//
