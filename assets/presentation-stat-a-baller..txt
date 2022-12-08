@@ -1,0 +1,44 @@
+Pitch:
+Are you tired of endlessly scrolling through cluttered sports websites just to find the stats for your favorite NBA players? Look no further, because Stat-A-Baller has got you covered! With just a few clicks, our sleek and user-friendly web application allows you to easily search and access detailed stats for all your favorite players in the NBA. No more sifting through irrelevant information or ads - just pure, up-to-date stats at your fingertips. Plus, with our visually appealing design, you can view and compare players' stats in an easy-to-read format. Don't miss out on the opportunity to enhance your sports experience with Stat-A-Baller. Try it out now and see the difference for yourself!
+
+Description:
+Stat-A-Baller is a web application that provides users with detailed statistics for NBA players. With Stat-A-Baller, users can easily search for any player and view their stats, including points per game, rebounds, assists, and more. The user interface is intuitive and easy to use, making it the perfect tool for any NBA fan looking to stay up-to-date on the latest player statistics.
+
+Motivation for Development:
+Seth, an avid NBA fan, came up with the concept that he was most interested in. The team created Stat-A-Baller to provide a quick and easy way to access detailed statistics for our favorite players. We found that many existing websites offering NBA player stats were cluttered and difficult to navigate, so we decided to create a simple and user-friendly web application. We believe that Stat-A-Baller will be a valuable resource for NBA fans and are excited to share it with others.
+
+Breakdown of Tasks and Roles (bullet points):
+- Idea for stat-a-baller.
+- Used KanBan in Github to organize project
+- Held virtual meetings using Zoom to brainstorm
+- Created a list of features and functions for the application
+- Used wireframe.cc to create a visual representation
+- Divided work among team members and began the development of application
+
+As a group, we first came up with the idea for Stat-A-Baller and used KanBan in Github to organize our project. We held a virtual meeting using Zoom to brainstorm ideas and create a list of features and functions for the application. We used wireframe.cc to create a visual representation of the application, which helped us understand how the different features would work together. Once we had a clear plan in place, we divided the work among our team members and began working on the development of Stat-A-Baller.
+
+Challenges (presenter notes):
+To create Stat-A-Baller, our team had to overcome a few challenges. First, we had to collect and organize a large amount of data from various sources. This was time-consuming and challenging, but necessary to provide accurate statistics for NBA players. Next, we had to design a user-friendly interface that was easy to navigate and use for NBA fans. This required careful planning and design to create an intuitive interface that was accessible to users of all skill levels.
+
+Ensuring the accuracy and reliability of the statistics was also important. To do this, we had to use a correct API to get accurate data from the provider. Unfortunately, the only free API version we could find was from balldontlie.com, which had outdated statistics. Despite this challenge, we were able to work around it and provide reliable statistics for our users.
+
+Finally, we wanted Stat-A-Baller to have a visually appealing and engaging user interface. To achieve this, we used Bulma.io to design the interface, which helped us maximize its functional aspect and make it aesthetically pleasing. However, due to Bulma's restrictions and the many elements involved, we had to break down the JavaScript into several files and host the "carousel" plugin locally to edit specific variables and functions to get it to work the way we wanted it to. Despite this challenge, we were able to create a visually appealing and engaging user interface for Stat-A-Baller.
+
+Challenge Bullet points:
+-Collecting and organizing large amounts of data from various sources
+-Creating an intuitive and easy-to-use interface for NBA fans
+-Ensuring the accuracy and reliability of the statistics provided
+-Designing a visually appealing and engaging user interface using Bulma.io and JavaScript.
+
+
+Successes:
+Thanks to our effective communication methods, our team was able to successfully develop Stat-A-Baller. We used texting and Slack to quickly share information and updates, and we held regular meetings to discuss the progress of the project and ensure that everyone was on the same page. These communication strategies allowed us to work efficiently and effectively as a team, which helped us create a successful web application. Additionally, our ability to problem-solve and debug small issues contributed to the success of the initial release.
+
+Success Bullet Points:
+-Use of effective communication methods such as texting and Slack
+-Regular meetings to discuss project progress and ensure team alignment
+-Ability to efficiently and effectively work as a team
+-Problem-solving and debugging skills contributed to the success of the initial release.
+
+Condensed Summary:
+Stat-A-Baller is a web application that provides users with detailed statistics for NBA players. It was developed by a group of UCB students who wanted to create a user-friendly tool for accessing player stats. The application features a sleek and intuitive user interface and allows users to easily search for any player and view their stats. The team faced challenges such as collecting and organizing data and designing a user-friendly interface but ultimately succeeded in creating a successful and useful tool for NBA fans.

@@ -1,36 +1,60 @@
-# group_project_one
-Repo for first group project
 
-## Project Requirements
-* Use a CSS framework other than Bootstrap.
+# Project Title
 
-* Be deployed to GitHub Pages.
+A brief description of what this project does and who it's for
 
-* Be interactive (in other words, accept and respond to user input).
+# Stat-A-Baller
 
-* Use modals instead of alerts, confirms, or prompts.
+Stat-A-Baller is a web application that provides users with detailed statistics for NBA players. 
 
-* Use client-side storage to store persistent data.
+## Description
+With Stat-A-Baller, users can easily search for any player and view their stats, including points per game, rebounds, assists, and more. The user interface is intuitive and easy to use, making it the perfect tool for any NBA fan looking to stay up-to-date on the latest player statistics.
 
-* Be responsive.
+## Features
+Search bar for easily finding any NBA player
+Detailed player statistics, including points per game, rebounds, and assists
+Picture of the player when their name is clicked on
+Key stats of hall of fame NBA players as background pictures on the webpage
+Ability to add favorite players to a "favorites" section for quick access (coming soon)
 
-* Have a polished UI.
+## Getting Started
+-Visit the Stat-A-Baller website at https://coderchrisdean.github.io/stat-a-baller/
+-Use the search bar to find a star NBA player
+-Click on the player to view their stats in detail
 
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, and so on).
+## User Story (using INVEST method):
 
-* Have a quality README (including a unique name, description, technologies used, screenshot, and link to the deployed application).
+-As an NBA fan, I want to easily view and access detailed statistics for my favorite players.
+-The user interface will display popular players at the top of the page, and provide a search bar for the full list of NBA players. When a player is clicked on, their stats will be displayed in detail.
+-The user will be able to easily view and access detailed statistics for NBA players, and can easily search for and find any player they are looking for.
+-The user will be able to view a picture of the player when they click on their name, and will see a background of hall of fame NBA players as background pictures on the webpage.
+-The user interface will be intuitive and easy to use, making it the perfect tool for NBA fans looking to stay up-to-date on their favorite player statistics.
+-The goal of this user story is to improve the user experience for NBA fans looking to view and access detailed player statistics.
 
-## Presentation Requirements
-[Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit#slide=id.p)
+## Deployed URL
+https://coderchrisdean.github.io/stat-a-baller/
 
-*Elevator pitch: A one-minute description of your application.
+## Link to Repository
+https://github.com/coderchrisdean/stat-a-baller
 
-*Concept: What is your user story? What was your motivation for development?
+## Requirements
+-Internet connection
+-Web browser
 
-*Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+## Screenshot of Finished Project
+https://github.com/coderchrisdean/stat-a-baller/blob/chris-ui-css/assets/images/screenshot/homepage-screenshot.png
 
-*Demo: Show your stuff!
+## Built With
+-Microsoft Visual Studio Code
+-HTML5
+-JavaScript
+-CSS
+-Bulma.io
+-Bulma.io plugin/extension for carousel feature.
 
-*Directions for future development.
+## Authors
 
-*Links to the deployed application and the GitHub repository.
+- Christopher Dean [@coderchrisdean](https://www.github.com/coderchrisdean)
+- Seth Davis [@githubusername ](https://www.github.com/githubusername)
+- Meng [@githubusername](https://www.github.com/githubusername)
+- Grace [@githubusername](https://www.github.com/githubusername)
