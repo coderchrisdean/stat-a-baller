@@ -268,15 +268,22 @@ var player_Lebron = document.querySelector("#btnLJ");
 var player_Steph = document.querySelector("#btnSC");
 var playerBtnsArr = [player_Giannis, player_Lebron, player_Nikola, player_Steph];
 
-//debug below
+// ----------- mx: save static homepage player to local storage so we can grab image on other page-----------
+function saveStaticImagePlayerClickToLocalStorage(inputPlayer) {
+  localStorage.setItem("userSearchPlayer", JSON.stringify(inputPlayer));
+}
+
+// function that handles sending user to starPlayerPage
 playerBtnsArr.forEach(button => {
   button.addEventListener('click', e => { 
     // get each button's value
     var playerName = button.textContent;
-    // console.log(playerName); // ✅
-    getPlayerId(playerName);
-    // window.location.href = "starPlayerPge.html";
-    // console.log(playerName); // Debug statement 2
+
+    // set name to local storage so image can be grabbed from local storage
+    saveStaticImagePlayerClickToLocalStorage(playerName);
+
+    // go to starPage
+    window.location.href = "starPlayerPge.html";
    });
 });
 
