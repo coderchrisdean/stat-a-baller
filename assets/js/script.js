@@ -259,3 +259,15 @@ function saveSearchedPlayer() {
   window.location.href = "option_player_page.html";
 }
 // ----------- ⬆ mx: divider ⬆ -----------
+
+
+
+
+//  ----------------- divider ---------------
+// Card fir Stats -- Chris
+// When click on player image on home page, dynamically manipulate DOM to 
+// ** refer to star player page for each player ** --> go to starplayer page 
+// with selected player and profile information.
+// Profile Stats to include:
+// Height, Weight, 
+//  ----------------- divider ---------------

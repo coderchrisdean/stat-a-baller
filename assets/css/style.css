@@ -150,3 +150,103 @@
 
 /* ----------- ⬆ mx: divider ⬆ ----------- */
 
+/* chris divider */
+
+.foot {
+  font-size: 20px;
+}
+
+/* $pi: 3.14159265359;
+$width: 200px;
+$height: ($width/4) * 3;
+$floor_width: 4px;
+$ball_border_width: 4px;
+$border_color: #ac4b07;
+$ball_color: #ffae58;
+$floor_color: #505050;
+.loader-wrapper {
+  width: $width;
+  height: $height;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -$height/2 0px 0px -$width/2;
+  overflow: hidden;
+}
+.floor{
+  position: absolute;
+  width: $pi*($width/2);
+  bottom: 0px;
+  height: $floor_width;
+  background: $floor_color;  
+  animation-name: floor_move;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+}
+.ball {
+  width: 50%;
+  height: ($height/3)*2;
+  border-radius: 50%;
+  left: 0;
+  background: $ball_color;
+  position: absolute;
+  border: $ball_border_width solid $border-color;
+  bottom: $floor_width;
+  animation-name: ball;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+  overflow: hidden;
+}
+.ball-line {
+  position: absolute;
+  width: calc(100% + 2px);
+  height: $ball_border_width;
+  background: $border_color;
+}
+.ball-line:nth-child(1) {
+  top: 50%;
+  margin-top: -2px;
+}
+.ball-line:nth-child(2) {
+  width: 100%;
+  height: 30%;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  background: transparent;
+  border: $ball_border_width solid $border-color;
+  top: -10px;
+}
+.ball-line:nth-child(3) {
+  width: 100%;
+  height: 30%;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  background: transparent;
+  border: $ball_border_width solid $border-color;
+  bottom: -10px;
+}
+.ball-line:nth-child(4) {
+  top: 50%;
+  margin-top: -2px;
+  transform: rotate(90deg);
+}
+@keyframes ball {
+  from,to {
+    transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(360deg);
+  }
+}
+@keyframes floor_move {
+  from,to {
+    left: ($width/4);
+  }
+  50% {
+    left: -$pi*($width/2) + ($width/4);
+  }
+} */
