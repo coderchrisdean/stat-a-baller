@@ -13,9 +13,9 @@ Key stats of hall of fame NBA players as background pictures on the webpage
 Ability to add favorite players to a "favorites" section for quick access (coming soon)
 
 ## Getting Started
--Visit the Stat-A-Baller website at https://coderchrisdean.github.io/stat-a-baller/
--Use the search bar to find a star NBA player
--Click on the player to view their stats in detail
+- Visit the Stat-A-Baller website at https://coderchrisdean.github.io/stat-a-baller/
+- Use the search bar to find a star NBA player
+- Click on the player to view their stats in detail
 
 ## Deployed URL
 https://coderchrisdean.github.io/stat-a-baller/
@@ -24,19 +24,19 @@ https://coderchrisdean.github.io/stat-a-baller/
 https://github.com/coderchrisdean/stat-a-baller
 
 ## Requirements
--Internet connection
--Web browser
+- Internet connection
+- Web browser
 
 ## Screenshot of Finished Project
 https://github.com/coderchrisdean/stat-a-baller/blob/chris-ui-css/assets/images/screenshot/homepage-screenshot.png
 
 ## Built With
--Microsoft Visual Studio Code
--HTML5
--JavaScript
--CSS
--Bulma.io
--Bulma.io plugin/extension for carousel feature.
+- Microsoft Visual Studio Code
+- HTML5
+- JavaScript
+- CSS
+- Bulma.io
+- Bulma.io plugin/extension for carousel feature.
 
 ## Authors
 
