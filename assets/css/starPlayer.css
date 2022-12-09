@@ -6,10 +6,9 @@
 }
 
 .img {
-    /* content:url(/assets/images/J.png); */
+
     width: 256px;
     margin: auto;
-
 }
 
 .hero {
@@ -20,24 +19,9 @@
     align-content: flex-start;
 }
 
-/* .ceter {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #021a36
-        } */
-/* .background {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #021a36
-        } */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-
-
-/* 
-.table td.is-vcentered,
-.table th.is-vcentered {
-  vertical-align: middle;
-} */
+}

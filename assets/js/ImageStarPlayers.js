@@ -1,12 +1,11 @@
-var player_Giannis = document.querySelector("#Giannis");
-var player_Nikola = document.querySelector("#Nikola");
-var player_Lebron = document.querySelector("#Lebron");
-var player_Steph = document.querySelector("#Steph");
-
 var img_Giannis = document.getElementById("Giannis_ID");
 var img_Nikola = document.getElementById("Nikola_ID");
 var img_Lebron = document.getElementById("Lebron_ID");
 var img_Steph = document.getElementById("Steph_ID");
+
+
+var currentPlayer=localStorage.getItem("currentPlayer");
+console.log(currentPlayer);
 
 var imgArray = [img_Giannis, img_Nikola, img_Lebron, img_Steph];
 
@@ -17,25 +16,36 @@ function showImg(img) {
     img.style.display = "block";
 }
 
-player_Giannis.addEventListener("click", function (e) {
-    showImg(img_Giannis);
-    // window.location=document.getElementById('Giannis_ID').href;
-});
-player_Nikola.addEventListener("click", function (e) {
-    showImg(img_Nikola);
-});
-player_Lebron.addEventListener("click", function (e) {
-    showImg(img_Lebron);
-});
-player_Steph.addEventListener("click", function (e) {
-    showImg(img_Steph);
-});
-
-// addEventListener('click', (event) => {});
-// onclick = (event) => { };
-
-// this.slider.container.addEventListener(
-//     "touchstart",
-//     this.onStartDrag
-//   ),
+if (currentPlayer==="Giannis_ID"){
+    try {
+        showImg(img_Giannis);
+    }
+    catch(error){
+        console.error(error);
+    };
+}
+else if(currentPlayer==="Nikola_ID"){
+    try{
+        showImg(img_Nikola);
+    }
+    catch(error){
+        console.error(error);
+    }    
+    }
+else if(currentPlayer==="Lebron_ID"){
+    try{
+        showImg(img_Lebron);    
+    }
+    catch(error){
+        console.error(error);
+    }
+}
+else if(currentPlayer==="Steph_ID"){
+    try{
+        showImg(img_Steph);
+    }
+    catch(error){
+        console.error(error);
+    }
+}
 
