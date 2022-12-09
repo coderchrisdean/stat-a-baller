@@ -266,27 +266,43 @@ var player_Giannis = document.querySelector("#btnGA");
 var player_Nikola = document.querySelector("#btnNJ");
 var player_Lebron = document.querySelector("#btnLJ");
 var player_Steph = document.querySelector("#btnSC");
+var playerBtnsArr = [player_Giannis, player_Lebron, player_Nikola, player_Steph];
+
+//debug below
+playerBtnsArr.forEach(button => {
+  button.addEventListener('click', e => { 
+    // get each button's value
+    var playerName = button.textContent;
+    // console.log(playerName); // ✅
+    getPlayerId(playerName);
+    // window.location.href = "starPlayerPge.html";
+    // console.log(playerName); // Debug statement 2
+   });
+});
+
 
 // var player_Giannis = document.querySelector("#btnGA");
 // console.log(player_Giannis);
 
-player_Giannis.addEventListener("click", function (e) {        
-  localStorage.setItem("currentPlayer", "Giannis_ID");
-  window.location.href = "starPlayerPge.html";  
-});
 
-player_Nikola.addEventListener("click", function (e) {        
-  localStorage.setItem("currentPlayer", "Nikola_ID");
-  window.location.href = "starPlayerPge.html";  
-});
 
-player_Lebron.addEventListener("click", function (e) {        
-  localStorage.setItem("currentPlayer", "Lebron_ID");
-  window.location.href = "starPlayerPge.html";  
-});
+// player_Giannis.addEventListener("click", function (e) {     
+//   // localStorage.setItem("currentPlayer", "Giannis_ID");
+//   window.location.href = "starPlayerPge.html";  
+// });
 
-player_Steph.addEventListener("click", function (e) {        
-  localStorage.setItem("currentPlayer", "Steph_ID");
-  window.location.href = "starPlayerPge.html";  
-});
-//----------------------------------------H.Than: StarPlayers Section End---------------------------------//
+// player_Nikola.addEventListener("click", function (e) {        
+//   // localStorage.setItem("currentPlayer", "Nikola_ID");
+//   window.location.href = "starPlayerPge.html";  
+// });
+
+// player_Lebron.addEventListener("click", function (e) {        
+//   // localStorage.setItem("currentPlayer", "Lebron_ID");
+//   window.location.href = "starPlayerPge.html";  
+// });
+
+// player_Steph.addEventListener("click", function (e) {        
+//   // localStorage.setItem("currentPlayer", "Steph_ID");
+//   window.location.href = "starPlayerPge.html";  
+// });
+// //----------------------------------------H.Than: StarPlayers Section End---------------------------------//
