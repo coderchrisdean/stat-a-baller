@@ -6,10 +6,9 @@
 }
 
 .img {
-    /* content:url(/assets/images/J.png); */
+
     width: 256px;
     margin: auto;
-
 }
 
 .hero {
@@ -19,25 +18,15 @@
     justify-content: space-between;
     align-content: flex-start;
 }
+.stat-card {
+    float: left;
+    position: fixed;
 
-/* .ceter {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #021a36
-        } */
-/* .background {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #021a36
-        } */
+}
 
-
-
-
-/* 
-.table td.is-vcentered,
-.table th.is-vcentered {
-  vertical-align: middle;
-} */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

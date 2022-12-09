@@ -12,22 +12,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Stat-A-Baller: NBA Statistics for Your Favorite Players!</title>
   </head>
   <body>
+
     <!-- Hero -->
-    <section class="hero is-info">
-      <!-- Enter Block for Space in Page -->
-      <div class="block"></div>
-      <!-- Nav -->
-      <nav>
+<section class="hero is-info">
+    <!-- Enter Block for Space in Page -->
+    <div class="block"></div>
+    <!-- Nav -->
+    <nav>
         <div class="navbar">
           <div class="container">
             <!-- <div class="navbar-brand">
@@ -43,102 +41,82 @@
               <p class="subtitle">NBA Statistics for Your Favorite Players!</p>
             </div>
             <!-- Nav Within Hero  -->
-                  <div id="navbarMenuHeroB" class="navbar-menu">
-                        <div class="navbar-end loader-wrapper">
-                            <div class="floor">
-                                <div class="ball">
-
-                                </div>
-                            </div>
-                              <!-- <a class="navbar-item">placeholder</a>
-                              <a class="navbar-item">placeholder</a>
-                              <a class="navbar-item">Placeholder</a> -->
+            <!-- <div id="navbarMenuHeroB" class="navbar-menu">
+                        <div class="navbar-end">
+                            add is-active to class ofr effect 
+                            <a class="navbar-item">placeholder</a>
+                            <a class="navbar-item">placeholder</a>
+                            <a class="navbar-item">Placeholder</a>
                 
                         </div>
-                 </div> 
+                    </div> -->
           </div>
         </div>
-      </nav>
+    </nav>
+<!-- Project Title -->
 
-      <!-- Project Title -->
-
-      <section class="hero-body">
-        <div class="container has-text-centered">
-          <!-- Enter Carousel Feature -->
-          <section id="carousel">
-            <div class="columns">
-              <div id="slider" class="container">
-                <!-- Player Giannis Antetokounmpo -->
-                <div class="card column">
-                  <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                      <!-- Link to External Page -->
-                      <a href="" class="link"
-                        ><img
-                          src="./assets/images/players/Antetokounmpo_Giannis-Action.jpg"
-                          alt="Giannis Antetokounmpo"
-                      /></a>
-                    </figure>
-                  </div>
-                </div>
-
-                <!-- Player Nikola Jokik -->
-                <div class="card column">
-                  <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                      <img
-                        src="./assets/images/players/Jokik_Nikola_action.jpg"
-                        alt="Nikola Jokik"
-                      />
-                    </figure>
-                  </div>
-                </div>
-
-                <!-- Player Lebron James -->
-                <div class="card column">
-                  <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                      <img
-                        src="./assets/images/players/James_Lebron_Action.jfif"
-                        alt="Lebron James"
-                      />
-                    </figure>
-                  </div>
-                </div>
-
-                <!-- Player Steph Curry -->
-                <div class="card column">
-                  <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                      <img
-                        src="./assets/images/players/Curry_Steph-Action.jpg"
-                        alt="Lebron James"
-                      />
-                    </figure>
-                  </div>
-                </div>
-              </div>
+<section class="hero-body">
+<div class="container has-text-centered">
+    <!-- Enter Carousel Feature -->
+    <section id="carousel">
+        
+        <div class="columns">
+        <div id="slider" class="container">
+            <!-- Player Giannis Antetokounmpo -->
+        <div class="card column">
+            <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                    <!-- Link to External Page -->
+                    <a href="" class="link"><img src="./assets/images/players/Antetokounmpo_Giannis-Action.jpg" alt="Giannis Antetokounmpo" /></a>
+                </figure>
             </div>
-          </section>
+
         </div>
-      </section>
-      <!-- Player Buttons -->
-      <section class="container">
-        <div class="hero-foot">
-          <nav class="navbar">
+
+            <!-- Player Nikola Jokik -->
+        <div class="card column">
+            <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                    <img src="./assets/images/players/Jokik_Nikola_action.jpg" alt="Nikola Jokik" />
+                </figure>
+            </div>
+
+        </div>
+
+            <!-- Player Lebron James -->
+        <div class="card column">
+            <div class="card-image">
+                    <figure class="image is-16by9 is-covered">
+                        <img src="./assets/images/players/James_Lebron_Action.jfif" alt="Lebron James" />
+                    </figure>
+            </div>
+
+        </div>
+        
+         <!-- Player Steph Curry -->
+        <div class="card column">
+            <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                    <img src="./assets/images/players/Curry_Steph-Action.jpg" alt="Lebron James" />
+                </figure>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+    
+</section>
+<!-- Player Buttons -->
+<section class="container">
+<div class="hero-foot">
+        <nav class="navbar">
+            
             <ul>
-              <button id="btnGA" class="button is-primary is-large">
-                <a class="is-link">Giannis Antetokounmpo<span></span></a>
-              </button>
-              <button id="btnSC" class="button is-primary is-large">
-                <a class="is-link">Steph Curry</a>
-              </button>
-              <button id="btnLJ" class="button is-primary is-large">
-                <a class="is-link">Lebron James</a>
-              </button>
-              <button id="btnNJ" class="button is-primary is-large">
-                <a class="is-link">Nikola Jokik</a>
-              </button>
+            <button id= "btnGA" class="button is-primary is-large"><a class="is-link">Giannis Antetokounmpo<span></span></a></button>
+            <button id= "btnSC" class="button is-primary is-large"><a class="is-link">Steph Curry</a></button>
+            <button id= "btnLJ" class="button is-primary is-large"><a class="is-link">Lebron James</a></button>
+            <button id= "btnNJ" class="button is-primary is-large"><a class="is-link">Nikola Jokik</a></button>
             </ul>
           </nav>
         </div>
