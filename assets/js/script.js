@@ -259,3 +259,34 @@ function saveSearchedPlayer() {
   window.location.href = "option_player_page.html";
 }
 // ----------- ⬆ mx: divider ⬆ -----------
+
+//----------------------------------------H.Than: StarPlayers Section Start---------------------------------//
+
+var player_Giannis = document.querySelector("#btnGA");
+var player_Nikola = document.querySelector("#btnNJ");
+var player_Lebron = document.querySelector("#btnLJ");
+var player_Steph = document.querySelector("#btnSC");
+
+// var player_Giannis = document.querySelector("#btnGA");
+// console.log(player_Giannis);
+
+player_Giannis.addEventListener("click", function (e) {        
+  localStorage.setItem("currentPlayer", "Giannis_ID");
+  window.location.href = "starPlayerPge.html";  
+});
+
+player_Nikola.addEventListener("click", function (e) {        
+  localStorage.setItem("currentPlayer", "Nikola_ID");
+  window.location.href = "starPlayerPge.html";  
+});
+
+player_Lebron.addEventListener("click", function (e) {        
+  localStorage.setItem("currentPlayer", "Lebron_ID");
+  window.location.href = "starPlayerPge.html";  
+});
+
+player_Steph.addEventListener("click", function (e) {        
+  localStorage.setItem("currentPlayer", "Steph_ID");
+  window.location.href = "starPlayerPge.html";  
+});
+//----------------------------------------H.Than: StarPlayers Section End---------------------------------//

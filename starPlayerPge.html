@@ -7,96 +7,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
-    <link rel="stylesheet" href="./assets/css/starPlayer.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/debug.css" /> -->
+    <link rel="stylesheet" href="./assets/css/starPlayer.css" />   
     <title>Star Player!</title>
-    <style>
-
-    </style>
 </head>
 
-<body>
+<body >
     <div class="place-center">
         <section class="hero">
-            <div class="hero-body">
+            <!-- <div class="hero-body"> -->
 
                 <div class="img center" id="Nikola_ID" style="max-width: 512px;">
-                    <img src="./assets/images/N.png" alt="J" />
-                </div>
-                <div class="img center" id="Lebron_ID" style="display:none">
-                    <img src="./assets/images/Lebron.png" alt="N" style="max-width: 512px;"/>
-                </div>
-                <div class="img center" id="Steph_ID" style="display:none">
-                    <img src="./assets/images/S.png" alt="J" style="max-width: 512px;"/>
-                </div>               
-                <div class="img center" id="Giannis_ID" style="display:none">
-                    <img src="./assets/images/AG.png" alt="G" style="max-width: 512px;" />
-                </div>
-
-                
-            </div>
-        </section>
-        <!-- column! -->
-        <section class="section">
-            <!-- <div class="container"> -->
-            <div class="columns has-background-primary-light">
-                <div class="column">
+                    <img src="./assets/images/N.png" alt="Nikola" />
 
                 </div>
-                <div class="column">
+                <div class="img center" id="Lebron_ID" style="display:none" style="max-width: 512px;">
+                    <img src="./assets/images/Lebron.png" alt="Lebron" />
 
                 </div>
-                <div class="column">
+                <div class="img center" id="Steph_ID" style="display:none" style="max-width: 512px;">
+                    <img src="./assets/images/S.png" alt="Steph" />
 
                 </div>
-                <div class="column">
+                <div class="img center" id="Giannis_ID" style="display:none" style="max-width: 512px;">
+                    <img src="./assets/images/AG.png" alt="Giannis" />
 
                 </div>
-            </div>
+
             <!-- </div> -->
+
         </section>
 
-        <section>
-            <div>
-                <a href="./starPlayerPge.html" onclick="return false;">
-    
-                    <div id="Nikola">
-                        Nikola Jokic
+        <section class="section" >
+            <div class="container">
+                <!-- <div class="columns "> -->
+                <div class="column">
+                    <!-- <div class="notification"> -->
+                    <p class="is-size-1 center" id="NAMEID" style="color: goldenrod;">
+                        <strong><span>FIRSTNAME</span> <span>LASTNAME</span> </strong>
+                    </p>
+
+                </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns ">
+                    <div class="column">
+                        <!-- <div class="notification"> -->
+                        <p class="is-size-5" id="HEIGHT" style="color: goldenrod;">
+                            <strong>HEIGHT</strong>
+                        <h3><span>z</span> lbs</h3>
+                        </p>
+
                     </div>
-                </a>
-                <a href="./starPlayerPge.html" onclick="return false;">
-    
-                    <div id="Giannis">
-                        Giannis Antetokounmpo
+                    <div class="column">
+                        <!-- <div class="notification"> -->
+                        <p class="is-size-5" id="WEIGHT" style="color: goldenrod;">
+                            <strong>WEIGHT</strong>
+                        <h3><span>x</span>ft <span>y</span>in</h3>
+                        </p>
+
                     </div>
-                </a>
-                <a href="./starPlayerPge.html" onclick="return false;">
-    
-                    <div id="Lebron">
-                        LeBron James
+                    <div class="column">
+
                     </div>
-                </a>
-                <a href="./starPlayerPge.html" onclick="return false;">
-    
-                    <div id="Steph">
-                        Stephen Curry
+                    <div class="column">
+
                     </div>
-                </a>
+                    <div class="column">
+
+                    </div>
+                    <div class="column">
+
+                    </div>
+                </div>
+                <div class="container">
+
+                    <div class="columns">
+                        <div class="column">
+                            <p class="is-size-5" id="POSITION"><strong>POSITION </strong>
+                            <h3><span>A</span></p>
+                            </h3>
+
+                        </div>
+                        <div class="column">
+
+                            <p class="is-size-5" id="TEAM"><strong>TEAM </strong>
+                            <h3><span>A</span></p>
+                            </h3>
+                        </div>
+
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="container">
+                    <div class="columns">
+                    <div class="column">
+                        <p class="is-size-5"><strong>BIO </strong></p>
+                            
+                    </div>
+
+
+                    <div class="column">
+
+                    </div>
+                    <div class="column">
+
+                    </div>
+                    <div class="column">
+
+                    </div>
+                    <div class="column">
+                </div>
+            </div>
             </div>
         </section>
 
-        <a id="go-back" href="./index.html">
-            <button class="go-back-btn button is-dark is-medium">
-                Go Back To Home Page
-            </button>
-        </a>
+        
+
+
+            <a id="go-back" href="./index.html">
+                <button class="go-back-btn button is-dark is-medium">
+                    Go Back To Home Page
+                </button>
+            </a>
     </div>
-    <script src="./assets/js/starPlayerPge.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/option_player.js"></script>
     <script src="./assets/js/ImageStarPlayers.js"></script>
+    <script src="./assets/js/starPlayerPge.js"></script>
 
 </body>
 
