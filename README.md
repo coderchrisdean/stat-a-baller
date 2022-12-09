@@ -42,7 +42,7 @@ https://github.com/coderchrisdean/stat-a-baller/blob/chris-ui-css/assets/images/
 
 - Christopher Dean [@coderchrisdean](https://www.github.com/coderchrisdean)
 - Seth Davis [@githubusername ](https://www.github.com/githubusername)
-- Meng [@githubusername](https://www.github.com/githubusername)
+- Mengxue [@mxu4321](https://github.com/mxu4321)
 - Grace [@githubusername](https://www.github.com/githubusername)
 
 
