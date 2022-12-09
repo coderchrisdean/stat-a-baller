@@ -40,7 +40,6 @@ var modalAlertCloseBtn = document.querySelector("#modal-alert-close-btn");
 searchBtn.addEventListener("click", (e) => {
   // console.log("hello1 " + getUserInput());
   e.stopPropagation();
-  // ------ 待增加条件:搜索不是球员的名字的时候 -------
   if (getUserInput() === "") {
     modalAlert.classList.add("is-active");
   } else {
@@ -50,10 +49,7 @@ searchBtn.addEventListener("click", (e) => {
 });
 
 // ----------- mx: fetch from api -----------
-// ⚠️ names are not players cannot be detected ⚠️
 // first fetch is to get player id by user input
-// second fetch is to get player stats by player id
-// from balldontlie api
 function searchPlayerID(userInput) {
   // var testPlayer = "Stephen Curry";
   var queryURL = `https://www.balldontlie.io/api/v1/players?search=${userInput}`;
@@ -97,8 +93,6 @@ function searchPlayerStats2019(playerID) {
       var fetchAssists2019 = data.data[1].ast;
       // console.log(
       //   "2019: " + fetchSeason2019,
-      //   fetchPlayerName2019,
-      //   fetchTeamName2019,
       //   fetchPoints2019,
       //   fetchRebounds2019,
       //   fetchSteals2019,
@@ -139,7 +133,6 @@ function searchPlayerStats2018(playerID) {
       // get data for: player name, team, points, rebounds, steals,assists
       //var fetchPlayerName2018 =
       data.data[0].player.first_name + " " + data.data[0].player.last_name;
-      //var fetchTeamName2018 = data.data[0].team.full_name;
       var fetchSeason2018 = data.data[18].game.date;
       var fetchPoints2018 = data.data[18].pts;
       var fetchRebounds2018 = data.data[18].reb;
@@ -147,8 +140,6 @@ function searchPlayerStats2018(playerID) {
       var fetchAssists2018 = data.data[18].ast;
       // console.log(
       //   "2018: " + fetchSeason2018,
-      //   fetchPlayerName2018,
-      //   fetchTeamName2018,
       //   fetchPoints2018,
       //   fetchRebounds2018,
       //   fetchSteals2018,
@@ -184,9 +175,6 @@ function searchPlayerStats2017(playerID) {
         modalAlert.classList.add("is-active");
       }
       // get data for: player name, team, points, rebounds, steals,assists
-      //var fetchPlayerName2017 =
-      data.data[0].player.first_name + " " + data.data[0].player.last_name;
-      //var fetchTeamName2017 = data.data[0].team.full_name;
       var fetchSeason2017 = data.data[0].game.date;
       var fetchPoints2017 = data.data[0].pts;
       var fetchRebounds2017 = data.data[0].reb;
@@ -194,8 +182,6 @@ function searchPlayerStats2017(playerID) {
       var fetchAssists2017 = data.data[0].ast;
       // console.log(
       //   "2017: " + fetchSeason2017,
-      //   fetchPlayerName2017,
-      //   fetchTeamName2017,
       //   fetchPoints2017,
       //   fetchRebounds2017,
       //   fetchSteals2017,
@@ -231,9 +217,6 @@ function searchPlayerStats2016(playerID) {
         modalAlert.classList.add("is-active");
       }
       // get data for: player name, team, points, rebounds, steals,assists
-      var fetchPlayerName2016 =
-        data.data[0].player.first_name + " " + data.data[0].player.last_name;
-      var fetchTeamName2016 = data.data[0].team.full_name;
       var fetchSeason2016 = data.data[0].game.date;
       var fetchPoints2016 = data.data[0].pts;
       var fetchRebounds2016 = data.data[0].reb;
@@ -241,8 +224,6 @@ function searchPlayerStats2016(playerID) {
       var fetchAssists2016 = data.data[0].ast;
       // console.log(
       //   "2016: " + fetchSeason2016,
-      //   fetchPlayerName2016,
-      //   fetchTeamName2016,
       //   fetchPoints2016,
       //   fetchRebounds2016,
       //   fetchSteals2016,

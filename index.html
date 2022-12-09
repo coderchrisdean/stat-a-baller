@@ -123,89 +123,79 @@
             <button id= "btnLJ" class="button is-primary is-large"><a class="is-link">Lebron James</a></button>
             <button id= "btnNJ" class="button is-primary is-large"><a class="is-link">Nikola Jokik</a></button>
             </ul>
-
-        </nav>
-        
-    </div>
-</section>
-<!-- Get Started Button to Expand Search Option -->
-<div class="block"></div>
-<!-- <section class="container">
-    <button id = "btnGetStarted" class="button is-danger is-medium"><a class="is-link"></a>Get Started</a></button>
-</section> -->
-<!-- ID: searchForPlayer -->
-<!------ mx: user input to search for players -------->
-<!-- Styled Search -->
-<!-- <section id = "searchForPlayer" class="section is-hidden">
-    <article class="message is-warning">
-        <div class="message-header">
-            <p>Search for Player</p>
-            <button id="btnSearchForPlayer" class="delete" aria-label="delete"></button>
+          </nav>
         </div>
-        <div class="message-body">
-            <div class ="container">
-                <div class="is-centered" id="user-input-div" class="container py-5 is-pulled-right is-pulled-bottom is-centered">
-                    <p>To search for a player's recent historical performance, enter their name in the search field.</p>
-                    <input id="user-input" class="input is-info" type="text" placeholder="Input here">
-                    <button id="user-input-search-btn" class="button is-success">Search Player</button>
-                </div>
+      </section>
+      <!-- Get Started Button to Expand Search Option -->
+      <div class="block"></div>
+      <!-- <section class="container">
+        <button id = "btnGetStarted" class="button is-danger is-medium"><a class="is-link"></a>Get Started</a></button>
+    </section> -->
+      <!-- ID: searchForPlayer -->
+
+      <!------ mx: user input to search for players -------->
+      <section class="section is-small">
+        <div id="user-input-div" class="container is-pulled-bottom is-centered">
+          <p>Enter a player's <strong>full name</strong> to search for recent historical performance(a random match within season 2019-2016)</p>
+          <input
+            id="user-input"
+            class="input is-info"
+            type="text"
+            placeholder="Input here"
+          />
+          <button id="user-input-search-btn" class="button is-success">
+            Search Player
+          </button>
+        </div>
+      </section>
+
+      <!------ modal alert ------->
+        <div id="modal-alert" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="modal-card">
+              <header class="modal-card-head"></header>
+              <section class="modal-card-body">
+                <p id="modal-alert-text" class="has-text-black">
+                  Player could not be found. Please try searching for a different name.
+                </p>
+              </section>
+              <footer class="modal-card-foot">
+                <button
+                  id="modal-alert-close-btn"
+                  class="button"
+                  aria-label="close"
+                >
+                  Close
+                </button>
+              </footer>
             </div>
+          </div>
         </div>
-    </article>
-</section> -->
 
-
-    <section class="section is-small">
-    <div class="is-centered" id="user-input-div" class="container py-5 is-pulled-right is-pulled-bottom is-centered">
-      <p>To search for a player's recent historical performance, enter their name in the search field.</p>
-      <input id="user-input" class="input is-info" type="text" placeholder="Input here">
-      <button id="user-input-search-btn" class="button is-success">Search Player</button>
-    </div>
-    </section>
-
-  
-  <!------ Alert - Modal------->
-<section>
-  <div id="modal-alert" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-content">
-      <div class="modal-card">
-        <header class="modal-card-head"></header>
-          <section class="modal-card-body">
-            <p id="modal-alert-text">Unfortunately, the player you searched for could not be found. Please try searching for a different player.</p>
-          </section>
-          <footer class="modal-card-foot">
-            <button id="modal-alert-close-btn" class="button" aria-label="close">Close</button>
-          </footer>
-      </div>
-    </div> 
-  </div>
-</section>
-
-    <!-- Modal  -->
-    <!-- Wrapped in section tag -->
-    <section class="section is-centered">
-      <div id="modal-option-player-div" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-        <!-- changed header to div -->
-        <div class="modal-card-head">
-          <p class="modal-card-title">
-            To view more details about a player, select their name.
-          </p>
+      <!-- Footer w/ Nav Bar -->
+      <section
+        class="has-navbar-fixed-top navbar-brand is-inline-flex is-justify-content-right"
+      >
+        <div
+          class="has-navbar-fixed-top navbar-brand is-inline-flex is-justify-content-left"
+        >
+          <p class="text is-medium">Group Project for Week-7&8</p>
         </div>
-        <!-- may need to add a user search input with auto complete:player's name -->
-        <div class="modal-card-body">
-          <!-- changed from section to div -->
-          <ul>
-            <li id="modal-li-1" class="modal-list py-1"><span id="modal-player1-span">player 1</span></li>
-            <li id="modal-li-2" class="modal-list py-1"><span id="modal-player2-span">player 2</span></li>
-            <li id="modal-li-3" class="modal-list py-1"><span id="modal-player3-span">player 3</span></li>
-          </ul>
-        </div>
-        <!-- changed from footer to div -->
-        <div class="modal-card-foot">
-          <button id="modal-delete-btn" class="button" aria-label="close">Cancel</button>
+
+        <div class="tags are-medium">
+          <a class="navbar-item" href="#"
+            ><span class="tag is-black">@Chris</span></a
+          >
+          <a class="navbar-item" href="#"
+            ><span class="tag is-black">@Grace</span></a
+          >
+          <a class="navbar-item" href="#"
+            ><span class="tag is-black">@Seth</span></a
+          >
+          <a class="navbar-item" href="https://github.com/mxu4321"
+            ><span class="tag is-black">@Mengxue</span></a
+          >
         </div>
       </div>
     </div>
@@ -213,31 +203,9 @@
   </section>
 
 
-<!-- Footer w/ Nav Bar -->
-<section class="has-navbar-fixed-top navbar-brand is-inline-flex is-justify-content-right">
-
-<div class="has-navbar-fixed-top navbar-brand is-inline-flex is-justify-content-left">
-    <p class="text is-medium">Group Project for Week-6</p>
-
-</div>
-
-<div class="tags are-medium">
-    <a class="navbar-item" href="#"><span class="tag is-black">@Chris</span></a>
-    <a class="navbar-item" href="#"><span class="tag is-black">@Grace</span></a>
-    <a class="navbar-item" href="#"><span class="tag is-black">@Seth</span></a>
-    <a class="navbar-item" href="#"><span class="tag is-black">@Meng</span></a>
-</div>
-</section>
-
-  
 <script src="./assets/js/script.js"></script>      
-<script src="./assets/js/buildhtml.js"></script>           
 <script src="./assets/js/carousel.js"></script>  
 <script src="./assets/js/ImageStarPlayers.js"></script>
-    <!-- import javascript files -->
-    <!-- <script src="./assets/js/carousel.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/test.js"></script>
-    <script src="./assets/js/option_player.js"></script> -->
+
   </body>
 </html>
