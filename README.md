@@ -41,9 +41,9 @@ https://github.com/coderchrisdean/stat-a-baller/blob/chris-ui-css/assets/images/
 ## Authors
 
 - Christopher Dean [@coderchrisdean](https://www.github.com/coderchrisdean)
-- Seth Davis [@githubusername ](https://github.com/SethDavis16)
+- Seth Davis [@SethDavis16](https://github.com/SethDavis16)
 - Mengxue [@mxu4321](https://github.com/mxu4321)
-- Grace [@githubusername](https://www.github.com/githubusername)
+- Grace [@htwethan](https://github.com/htwethan)
 
 
 
