@@ -28,3 +28,22 @@
     align-items: center;
 
 }
+.fixed-height {
+    height: 350px;
+  }
+  
+  .card-image {
+    height: 200px;
+  }
+  
+  .card-stats {
+    padding: 1.5em;
+  }
+  
+  .card-stats .columns {
+    margin-bottom: 0;
+  }
+  
+  .card-stats .column {
+    padding: 0.5em;
+  }
