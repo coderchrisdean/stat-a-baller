@@ -28,7 +28,11 @@ https://github.com/coderchrisdean/stat-a-baller
 - Web browser
 
 ## Screenshot of Finished Project
-https://github.com/coderchrisdean/stat-a-baller/blob/chris-ui-css/assets/images/screenshot/homepage-screenshot.png
+![homepage](https://user-images.githubusercontent.com/112605297/206879509-4e6c3bf4-5862-4ebd-811b-ee3ccaa3ca73.png)
+![star player page](https://user-images.githubusercontent.com/112605297/206879519-8107661e-9528-4127-ba06-4db1f4b891ea.png)
+![modal alert](https://user-images.githubusercontent.com/112605297/206879514-fff12d1f-c7e2-409f-9fbd-d0b88a94aff6.png)
+![option player page](https://user-images.githubusercontent.com/112605297/206879517-0bd46a7f-2981-45b4-bed7-8e8ddb4e7754.png)
+!
 
 ## Built With
 - Microsoft Visual Studio Code
@@ -37,6 +41,7 @@ https://github.com/coderchrisdean/stat-a-baller/blob/chris-ui-css/assets/images/
 - CSS
 - Bulma.io
 - Bulma.io plugin/extension for carousel feature.
+- Server Side APIs
 
 ## Authors
 
