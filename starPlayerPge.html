@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/css/starPlayer.css" />   
+    <link rel="stylesheet" href="./assets/css/starPlayer.css" />
+    
     <title>Star Player!</title>
 </head>
 
@@ -53,25 +54,26 @@
                             
                             <div class="container">
                                 <div class="column">
-                                    <div class="media-content">
-                                        <p class="title is-4"  id="NAMEID">Player Name</p>
-                                        <p class="subtitle is-6">Team Name</p>
+                                    <!-- Name & Team -->
+                                    <div class="container"> 
+                                        <p class="is-size-1 center" id="NAMEID" style="color: goldenrod;"><span id="playerFirstName"></span><span id="playerLastName"></span>
+                                        <p class="subtitle is-4" id="TEAM">Team</p>
                                     </div>
                                 </div>
                                 <div class="columns">
                                     <!-- column 1 -->
                                     <div class="column">
-                                        <h2 class="">Team:</h2>
-                                        <h2 class="">Position:</h2>
-                                        <h2 class="">Height</h2>
-                                        <h2 class="">Weight</h2>
+                                        
+                                        <h2 class="title is-4">Position:</h2>
+                                        <h2 class="title is-4">Height:</h2>
+                                        <h2 class="title is-4">Weight:</h2>
                                     </div>
                                     <!-- column 2 -->
                                     <div class="column">
-                                        <h2 class="">Team Name </h2>
-                                        <h2 class="">Position Name</h2>
-                                        <h2 class="">Height Name</h2>
-                                        <h2 class="">Weight Name</h2>
+                                        
+                                        <h2 class="title is-4"  id="POSITION">Position Name</h2>
+                                        <h2 class="title is-4"  id="HEIGHT">Height Name</h2>
+                                        <h2 class="title is-4"  id="WEIGHT">Weight Name</h2>
                                         
                                     </div>
                                 </div>
@@ -94,9 +96,7 @@
       
 
                     <!-- <div class="notification"> -->
-                    <p class="is-size-1 center" id="NAMEID" style="color: goldenrod;">
-                        <strong><span id="playerFirstName"></span> <span id="playerLastName"></span></strong>
-                    </p>
+              
 
         <!-- <section class="section">
             <div class="container">
@@ -186,25 +186,68 @@
 
                     </div>
                     <div class="column">
-<<<<<<< HEAD
                 </div> -->
   
-=======
                 </div>
-                </div>
+                <!-- </div> -->
             </div>
+            <div class="container">
+                <!-- <div class="columns"> -->
+                <div class="column">
+                    <h2 class="title is-size-6 is-1" style="color: goldenrod;"> HEIGHT: <span id="HEIGHT"></span></h2>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="container">
+                <!-- <div class="columns"> -->
+                <div class="column">
+                    <h2 class="title is-size-6 is-1" style="color: goldenrod;">POSITION: <span id="POSITION"></span>
+                    </h2>
+                </div>
+                <!-- </div>                 -->
+            </div>
+            <div class="container">
+                <!-- <div class="columns"> -->
+                <div class="column">
+                    <h2 class="title is-size-6 is-1" style="color: goldenrod;">TEAM:
+                        <span id="TEAM"></span>
+                    </h2>
+                    <h1></h1>
+                </div>
+                <!-- </div> -->
+            </div>
+
         </section>
->>>>>>> 30dcc9526b7ce6f562572b58dd488abaa36bf33e
+
 
         
 
 
  
 
+<div>
+            <a id="go-back" href="./index.html">
+                <button class="go-back-btn button is-dark is-medium" style="color: goldenrod;">
+                    << Return Home </button>
     
+            </a>
+        </section>
+       
+        <footer class="hero-foot center">
+            <div class="column">
+                <h5><a href="https://www.balldontlie.io/api/v1/players">API Source:
+                        https://www.balldontlie.io/api/v1/players</a></h5>
+                <h5><a href="https://en.wikipedia.org/wiki/List_of_current_NBA_team_rosters">Wikipedia:
+                    </a></h5>
+            </div>
+
+        </footer>
+    </div>
+>>>>>>> 9ec9c0a3e9b910146e14b77e55f544adafb970e3
+
     <script src="./assets/js/starPlayerPge.js"></script>
     <script src="./assets/js/ImageStarPlayers.js"></script>
-    
+
 </body>
 
 </html>

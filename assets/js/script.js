@@ -260,6 +260,7 @@ function saveSearchedPlayer() {
 }
 // ----------- ⬆ mx: divider ⬆ -----------
 
+<<<<<<< HEAD
 
 
 
@@ -273,6 +274,8 @@ function saveSearchedPlayer() {
 //  ----------------- divider ---------------
 //----------------------------------------H.Than: StarPlayers Section Start---------------------------------//
 
+=======
+>>>>>>> 9ec9c0a3e9b910146e14b77e55f544adafb970e3
 var player_Giannis = document.querySelector("#btnGA");
 var player_Nikola = document.querySelector("#btnNJ");
 var player_Lebron = document.querySelector("#btnLJ");
@@ -297,30 +300,3 @@ playerBtnsArr.forEach(button => {
     window.location.href = "starPlayerPge.html";
    });
 });
-
-
-// var player_Giannis = document.querySelector("#btnGA");
-// console.log(player_Giannis);
-
-
-
-// player_Giannis.addEventListener("click", function (e) {     
-//   // localStorage.setItem("currentPlayer", "Giannis_ID");
-//   window.location.href = "starPlayerPge.html";  
-// });
-
-// player_Nikola.addEventListener("click", function (e) {        
-//   // localStorage.setItem("currentPlayer", "Nikola_ID");
-//   window.location.href = "starPlayerPge.html";  
-// });
-
-// player_Lebron.addEventListener("click", function (e) {        
-//   // localStorage.setItem("currentPlayer", "Lebron_ID");
-//   window.location.href = "starPlayerPge.html";  
-// });
-
-// player_Steph.addEventListener("click", function (e) {        
-//   // localStorage.setItem("currentPlayer", "Steph_ID");
-//   window.location.href = "starPlayerPge.html";  
-// });
-// //----------------------------------------H.Than: StarPlayers Section End---------------------------------//
