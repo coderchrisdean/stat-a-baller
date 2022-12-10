@@ -6,6 +6,7 @@ var team = document.getElementById("TEAM");
 let btnGA = document.getElementById("btnGA");
 let firstName = document.getElementById("playerFirstName");
 let lastName = document.getElementById("playerLastName");
+
 // Grab player name from local storage
 const getStoragePlayer = () => {
     // get player from storage 
@@ -46,7 +47,7 @@ var getPlayerStats = (id) => {
             .then((data) => {
                 // set html to our data
                 position.innerHTML = data.position;
-                height.innerHTML = data.height_feet + "'" + data.height_inches;
+                height.innerHTML = data.height_feet + " ft " + data.height_inches  + " in";
                 team.innerHTML = data.team.full_name;
                 weight.innerHTML = data.weight_pounds;
                 playerFirstName.innerHTML = data.first_name;
