@@ -8,100 +8,104 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/starPlayer.css" />
-    
+
     <title>Stat-A-Baller: Star Player!</title>
 </head>
 
 <body style="color: goldenrod;">
-    <div class="place-center">
-        <!-- <section class="hero"> -->
-        <!-- <div class="hero-body"> -->
+    <div class="place-center ">
+        <section class="hero is-fullheight">
+            <!-- <div class="hero-body"> -->
 
-        <div class="img center" id="Nikola_ID" style="max-width: 512px;">
-            <img src="./assets/images/StarPlayerPage/Nikola-Jokic.png" alt="Nikola Jokic Image" />
-        </div>
-        <div class="img center" id="Lebron_ID" style="display:none" style="max-width: 512px;">
-            <img src="./assets/images/StarPlayerPage/Lebron-James.png" alt="Lebron James Image" />
-        </div>
-        <div class="img center" id="Steph_ID" style="display:none" style="max-width: 512px;">
-            <img src="./assets/images/StarPlayerPage/Stephen-Curry.png" alt="Stephen Curry Image" />
-        </div>
-        <div class="img center" id="Giannis_ID" style="display:none" style="max-width: 512px;">
-            <img src="./assets/images/StarPlayerPage/Giannis-Antetokounmpo.png" alt="Giannis Antetokounmpo Image" />
-        </div>
+            <div class="img center" id="Nikola_ID" style="max-width: 512px;">
+                <img src="./assets/images/StarPlayerPage/Nikola-Jokic.png" alt="Nikola Jokic Image" />
+            </div>
+            <div class="img center" id="Lebron_ID" style="display:none" style="max-width: 512px;">
+                <img src="./assets/images/StarPlayerPage/Lebron-James.png" alt="Lebron James Image" />
+            </div>
+            <div class="img center" id="Steph_ID" style="display:none" style="max-width: 512px;">
+                <img src="./assets/images/StarPlayerPage/Stephen-Curry.png" alt="Stephen Curry Image" />
+            </div>
+            <div class="img center" id="Giannis_ID" style="display:none" style="max-width: 512px;">
+                <img src="./assets/images/StarPlayerPage/Giannis-Antetokounmpo.png" alt="Giannis Antetokounmpo Image" />
+            </div>
 
-        <section class="section">
-            <div class="container card">
-                <div class="columns">
-                    <div class="column">
-                        <p class="is-size-1 center" id="NAMEID">
-                            <strong><span id="playerFirstName" style="color: goldenrod;"></span> <span id="playerLastName" style="color: goldenrod;"></span>
-                        </p>
-                    </div>
-                </div>
-      
-            <div class="container">
-                
-                <div class="container" style="color: goldenrod;">
-
-                    <div class="column">
-                        <p class="title is-size-5 is-1" style="color: goldenrod;">Profile:
-                        <h4><span id="BIO"></span><a
-                                href="https://en.wikipedia.org/wiki/List_of_current_NBA_team_rosters">Wikipedia</a>
-                        </h4>
-                        </p>
+            <section class="section">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <p class="is-size-1 center" id="NAMEID">
+                                <strong><span id="playerFirstName" style="color: goldenrod;"></span> <span
+                                        id="playerLastName" style="color: goldenrod;"></span>
+                            </p>
+                        </div>
                     </div>
 
-                </div>
-                <div class="column">
-                    <h2 class="title is-size-6 is-1" style="color: goldenrod;">Weight: <span id="WEIGHT"></span>
-                        lbs</h2>
-                    </h2>
-                </div>
-                
-            </div>
-            <div class="container">
-               
-                <div class="column">
-                    <h2 class="title is-size-6 is-1" style="color: goldenrod;"> Height: <span id="HEIGHT"></span></h2>
-                </div>
-               
-            </div>
-            <div class="container">
-              
-                <div class="column">
-                    <h2 class="title is-size-6 is-1" style="color: goldenrod;">Position: <span id="POSITION"></span>
-                    </h2>
-                </div>
-                
-            </div>
-            <div class="container">
-                
-                <div class="column">
-                    <h2 class="title is-size-6 is-1" style="color: goldenrod;">Team:
-                        <span id="TEAM"></span>
-                    </h2>
-                    <h1></h1>
-                </div>
-            </div>
+                    <div class="container">
 
-            <a id="go-back" href="./index.html">
-                <button class="go-back-btn button is-dark is-medium" style="color: goldenrod;">
-                    << Return Home </button>
-    
-            </a>
-        </section>
-       
-        <footer class="hero-foot center">
-            <div class="container">
-                <h5><a href="https://www.balldontlie.io/api/v1/players">API Source:
-                        https://www.balldontlie.io/api/v1/players</a></h5>
-                <h5><a href="https://en.wikipedia.org/wiki/List_of_current_NBA_team_rosters">Wikipedia:
-                    </a></h5>
-            </div>
+                        <div class="container" style="color: goldenrod;">
 
-        </footer>
+                            <div class="column">
+                                <p class="title is-size-5 is-1" style="color: goldenrod;">Profile:
+                                <h4><span id="BIO"></span><a
+                                        href="https://en.wikipedia.org/wiki/List_of_current_NBA_team_rosters">Wikipedia</a>
+                                </h4>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="column">
+                            <h2 class="title is-size-6 is-1" style="color: goldenrod;">Weight: <span id="WEIGHT"></span>
+                                lbs</h2>
+                            </h2>
+                        </div>
+
+                    </div>
+                    <div class="container">
+
+                        <div class="column">
+                            <h2 class="title is-size-6 is-1" style="color: goldenrod;"> Height: <span
+                                    id="HEIGHT"></span></h2>
+                        </div>
+
+                    </div>
+                    <div class="container">
+
+                        <div class="column">
+                            <h2 class="title is-size-6 is-1" style="color: goldenrod;">Position: <span
+                                    id="POSITION"></span>
+                            </h2>
+                        </div>
+
+                    </div>
+                    <div class="container">
+
+                        <div class="column">
+                            <h2 class="title is-size-6 is-1" style="color: goldenrod;">Team:
+                                <span id="TEAM"></span>
+                            </h2>
+                            <h1></h1>
+                        </div>
+                    </div>
+
+                    <a id="go-back" href="./index.html">
+                        <button class="go-back-btn button is-dark is-medium" style="color: goldenrod;">
+                            << Return Home </button>
+
+                    </a>
+            </section>
+
+            <footer class="hero-foot center">
+                <div class="container">
+                    <h5><a href="https://www.balldontlie.io/api/v1/players">API Source:
+                            https://www.balldontlie.io/api/v1/players</a></h5>
+                    <h5><a href="https://en.wikipedia.org/wiki/List_of_current_NBA_team_rosters">Wikipedia:
+                        </a></h5>
+                </div>
+
+            </footer>
     </div>
+    </section>
 
     <script src="./assets/js/starPlayerPge.js"></script>
     <script src="./assets/js/ImageStarPlayers.js"></script>
