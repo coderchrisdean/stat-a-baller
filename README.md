@@ -14,8 +14,8 @@ Ability to add favorite players to a "favorites" section for quick access (comin
 
 ## Getting Started
 - Visit the Stat-A-Baller website at https://coderchrisdean.github.io/stat-a-baller/
-- Use the search bar to find a star NBA player
-- Click on the player to view their stats in detail
+- Enter the famous player name in search input box to find the NBA Stats
+- Click on the player name button to review their short profile
 
 ## Deployed URL
 https://coderchrisdean.github.io/stat-a-baller/
@@ -25,7 +25,7 @@ https://github.com/coderchrisdean/stat-a-baller
 
 ## Requirements
 - Internet connection
-- Web browser
+- Web browser (recommend Google Chrome)
 
 ## Screenshot of Finished Project
 ![homepage](https://user-images.githubusercontent.com/112605297/206879509-4e6c3bf4-5862-4ebd-811b-ee3ccaa3ca73.png)
@@ -38,10 +38,9 @@ https://github.com/coderchrisdean/stat-a-baller
 - Microsoft Visual Studio Code
 - HTML5
 - JavaScript
-- CSS
-- Bulma.io
+- CSS framework: Bulma.io
 - Bulma.io plugin/extension for carousel feature.
-- Server Side APIs
+- Server Side APIs, https://www.balldontlie.io/#introduction
 
 ## Authors
 

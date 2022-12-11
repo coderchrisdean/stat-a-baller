@@ -14,7 +14,7 @@ function getImage() {
     // set image to matching name 
     if (noQuotations === "Giannis Antetokounmpo"){
         showImg(img_Giannis); 
-        
+        //relevant player's short profile text:
         document.getElementById("BIO").innerHTML = "Giannis Sina Ugo Antetokounmpo is a Greek-Nigerian professional basketball player for the Milwaukee Bucks of the National Basketball Association. Antetokounmpo's country of origin, in addition to his size, speed, strength, and ball-handling skills have earned him the nickname Greek Freak.\n Born and raised in Athens to Nigerian parents, Antetokounmpo began playing basketball for the youth teams of Filathlitikos in Athens. In 2011, he began playing for the club's senior team before entering the 2013 NBA draft, where he was selected 15th overall by the Bucks. In 2016–17 he led the Bucks in all five major statistical categories and became the first player in NBA history to finish a regular season in the top 20 in all five statistics of total points, rebounds, assists, steals, and blocks.[2] He received the Most Improved Player award in 2017. Antetokounmpo has received six All-Star selections, including being selected as an All-Star captain in 2019 and 2020, as he led the Eastern Conference in voting in these two years...For more information- refer to ";
            
     } else if(noQuotations==="Nikola Jokic"){

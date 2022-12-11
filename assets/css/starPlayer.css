@@ -1,9 +1,9 @@
 .place-center {
     background: url(../images/StarPlayerPage/StarPlayerPge-background.jpg);
-   
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
+    height:max-content;
     object-fit: cover;
     display: block;
 }
